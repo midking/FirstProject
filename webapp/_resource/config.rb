@@ -5,15 +5,15 @@ Encoding.default_external = "utf-8"
 
 environment = :development
 
-http_path       = "/"
-css_dir         = "css"
-# css_path        = ""
-sass_dir        = "sass"
-images_dir      = "images"
+http_path            = "/"
+css_dir              = "css"
+# css_path           = ""
+sass_dir             = "scss"
+images_dir           = "images"
 generated_images_dir = "images/sprites"
-relative_assets = true
-# images_path   = "/"
-# fonts_dir      = "fonts"
+relative_assets      = true
+# images_path        = "/"
+# fonts_dir          = "fonts"
 
 output_style = (environment == :production) ? :compressed : :compact
 line_comments = false
@@ -26,32 +26,32 @@ cache = false
 module Compass::SassExtensions::Sprites
 	module LayoutMethods
 		def compute_image_positions!
-		  case layout
-		  when SMART
+		case layout
+		when SMART
 			@images, @width, @height = Layout::Smart.new(@images, @kwargs).properties
-		  when DIAGONAL
+		when DIAGONAL
 			require 'compass/sass_extensions/sprites/layout/diagonal'
 			@images, @width, @height = Layout::Diagonal.new(@images, @kwargs).properties
-		  when HORIZONTAL
+		when HORIZONTAL
 			require 'compass/sass_extensions/sprites/layout/horizontal'
 			@images, @width, @height = Layout::Horizontal.new(@images, @kwargs).properties
-		  else
+		else
 			require 'compass/sass_extensions/sprites/layout/vertical'
 			@images, @width, @height = Layout::Vertical.new(@images, @kwargs).properties
-		  end
-		end	    
+		end
+		end
 	end
 	
 	module Layout	
 		class Smart < SpriteLayout
 
-		  def layout!
+		def layout!
 			calculate_positions!
-		  end
+		end
 
 		private # ===========================================================================================>
 
-		  def calculate_positions!
+		def calculate_positions!
 			fitter = ::Compass::SassExtensions::Sprites::RowFitter.new(@images)
 			current_y = 0
 			width = 0
@@ -79,41 +79,41 @@ module Compass::SassExtensions::Sprites
 			end
 			@width = width
 			@height = height
-		  end
+		end
 
 		end
 	end
 end
 
 module Compass::SassExtensions::Functions::Sprites
-  def sprite_url(map)
+def sprite_url(map)
 	verify_map(map, "sprite-url")
 	map.generate
 	generated_image_url(Sass::Script::String.new(map.name_and_hash + '?' +  `git rev-parse --short HEAD`.chomp))
-  end
+end
 end
 
 module Compass::SassExtensions::Sprites::SpriteMethods
-  def name_and_hash
+def name_and_hash
 	"#{path}.png"
-  end
+end
 
-  def cleanup_old_sprites
+def cleanup_old_sprites
 	Dir[File.join(::Compass.configuration.generated_images_path, "#{path}.png")].each do |file|
-	  log :remove, file
-	  FileUtils.rm file
-	  ::Compass.configuration.run_sprite_removed(file)
+	log :remove, file
+	FileUtils.rm file
+	::Compass.configuration.run_sprite_removed(file)
 	end
-  end
+end
 end
 
 module Compass
-  class << SpriteImporter
+class << SpriteImporter
 	def find_all_sprite_map_files(path)
-	  glob = "*{#{self::VALID_EXTENSIONS.join(",")}}"
-	  Dir.glob(File.join(path, "**", glob))
+	glob = "*{#{self::VALID_EXTENSIONS.join(",")}}"
+	Dir.glob(File.join(path, "**", glob))
 	end
-  end
+end
 end
 
 # ---------------------------------------------------------------- #
