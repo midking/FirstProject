@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.guide { width: 980px; margin: 15px auto; }
+.guide .guide_h1 { font-size: 2em; }
+.guide .guide_h2 { font-size: 1.6em; margin: 20px 0 5px; }
+.guide .guideArea { background-color: #f2f2f2; padding: 5px 20px; border: 1px solid #666; }
+.guide .guideArea dl dt { width: 120px; float: left; pointer-events: none; }
+.guide .guideArea dl dd { font-size: 15px; }
+.guide .guideArea .codeXmp { background-color: #fff; }
+
+.thumbList.type01 .imgBox { width: 20%; float: left; }
+.thumbList.type01 .imgBox img { max-width: 100%; }
+.thumbList.type01 figcaption { width: 80%; float: left; padding-left: 1%; }
+
+.thumbList.type02 figure { width: 30%; float: left; }
+.thumbList.type02 .imgBox { text-align: center; overflow: hidden; height: 148px; }
+.thumbList.type02 .imgBox img { width: 100%; }
+
+.thumbList.type03 .imgBox { width: 20%; float: left; }
+.thumbList.type03 .imgBox img { max-width: 100%; }
+.thumbList.type03 figcaption { width: 80%; float: left; padding-right: 1%; }
+
+.ulStyle.type01 li { padding-left: 10px; text-indent: -10px; }
+.ulStyle.type01 li:before { content: "· "; }
+.ulStyle.type02 li { padding-left: 12px; background: url(../images/sub0101_dot.png) 0 6px no-repeat; }
+.ulStyle.type03 li { padding-left: 12px; position: relative; }
+.ulStyle.type03 span { position: absolute; left: 0; }
+
+/*# sourceMappingURL=guide.css.map */

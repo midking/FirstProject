@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@font-face{
+	font-family: 'NanumBarunGothic';
+	src: url(../fonts/NanumBarunGothic.woff) format("woff");
+}
+
+.clipTest{
+	/* position: absolute; */
+	clip: rect(10px, 20px, 20px, 10px);
+	width:1px;
+}
+
+*{box-sizing: border-box; }
+html { font-size: 1em; }
+body { font-size: 0.875em; color: #555;font-family: NanumBarunGothic; }
+
+button { cursor: pointer; }
+
+a { text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.25; font-weight: bold; }
+
+
+/* IR */
+legend,
+.hidden { position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
+caption { clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
+
+/* float */
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.clearfix:after { content: ''; display: table; width: 100%; clear: both; }
+
+/* inline-block 스페이스바 삭제 */
+.wordSpacingClear { word-spacing: -4px; }
+.wordSpacingClear a, .wordSpacingClear span { word-spacing: normal; }
+
+/* text 생략 */
+.ellipsis { width: 100%; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.clamp2 { white-space: normal; line-height: 1.2; height: 2.4em; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+/* 버튼 정렬 */
+.btnLeftBox { text-align: left; }
+
+.btnCenterBox { text-align: center; }
+
+.btnRightBox { text-align: right; }
+
+.btn_margin9 button, .btn_margin9 a { margin-left: 9px; }
+.btn_margin9 button:first-child, .btn_margin9 a:first-child { margin-left: 0; }
+
+.mt20 { margin-top: 20px; }
+
+/* 썸네일 확대 */
+.img_zoom:hover { overflow: hidden; }
+.img_zoom:hover img { transform: scale(1.1, 1.1); transition: all 0.4s; }
+
+/*# sourceMappingURL=reset.css.map */
