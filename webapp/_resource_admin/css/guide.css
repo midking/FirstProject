@@ -21,7 +21,7 @@
 .thumbList.type03 figcaption { width: 80%; float: left; padding-right: 1%; }
 
 .ulStyle.type01 li { padding-left: 10px; text-indent: -10px; }
-.ulStyle.type01 li:before { content: "路 "; }
+.ulStyle.type01 li:before { content: "· "; }
 .ulStyle.type02 li { padding-left: 12px; background: url(../images/sub0101_dot.png) 0 6px no-repeat; }
 .ulStyle.type03 li { padding-left: 12px; position: relative; }
 .ulStyle.type03 span { position: absolute; left: 0; }

@@ -1,0 +1,9 @@
+diff a/webapp/_resource_admin/css/common.css b/webapp/_resource_admin/css/common.css	(rejected hunks)
+@@ -13,7 +13,6 @@
+ 
+ *{box-sizing: border-box; }
+ html { font-size: 1em; }
+-body { font-size: 0.875em; color: #555;font-family: NanumBarunGothic; }
+ body { font-size: 0.875em; color: #555;font-family: NanumBarunGothic; line-height:1.5;}
+ 
+ button { cursor: pointer; }
