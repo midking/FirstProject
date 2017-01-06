@@ -109,7 +109,6 @@
 				ul{
 					height:35px;
 					background:#354559;
-					// background:url(../images/common/top_list_header.png) left top;
 					li{
 						float:left;
 						margin:0 0 0 24px;
@@ -132,11 +131,7 @@
 		}
 	}
 	.container{
-		// position:absolute;
-		// display:table;
 		background-color:#fff;
-		// height:100%;
-		// min-height:861px; 
 		position:fixed;
 		top:100px;
 		bottom:0;
@@ -184,13 +179,13 @@
 						line-height:29px;
 						color:#fff;
 					}
-					&.on>a, a:hover,a:active{
-
+					&.on>a,
+					a:hover,
+					a:active{
 						border:none;
 						height:31px;
 						line-height:31px;
 						background-color:$baseColor;
-
 					}
 					ul{
 						li a{
@@ -202,12 +197,6 @@
 			}
 		}
 		.content{
-			/* height:100%;
-			display:table-cell;
-			// width:75%;
-			padding:30px 150px 0 0;
-			// margin:0 0 100px 270px;
-			// height:100%; */
 			width:75%;
 			padding:30px 0 0;
 			position:absolute;
@@ -258,7 +247,6 @@
 					}
 				}
 			}
-			
 			.boardTotal{
 				clear:both;
 				margin-top:30px;
@@ -267,7 +255,6 @@
 			}
 			.calendar{
 				margin:30px 0 10px;
-				// border:1px solid #c8c8c8;
 				.monthWrap{
 					display:inline-block;
 					button{
@@ -288,11 +275,8 @@
 				}
 			}
 			.replyWrap{
-				// background:#f1f1f1;
-				// border:1px solid #e3e3e3;
 				padding:25px 0;
 				overflow:hidden;
-				// min-height:500px;
 				ul{
 					margin-top:0;
 					position:relative;
@@ -308,7 +292,6 @@
 							&>.reply{
 								padding-left:0;
 							}
-
 						} 
 					}
 					li{
@@ -347,7 +330,6 @@
 						.comment{
 							font-size:13px;
 							padding:5px 0;
-							// border-bottom:1px dotted #999; 
 						}
 						.reply{
 							padding:5px 0 5px 15px;
@@ -360,8 +342,6 @@
 								width:auto;
 							}
 						}
-
-						
 					}
 				}
 				.replyRegist{
@@ -431,7 +411,6 @@
 					}
 					dd{
 						ul{
-
 							li{
 								position:relative;
 								min-height:21px;
