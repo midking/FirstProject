@@ -12,6 +12,8 @@ caption { position: relative; clip: rect(0 0 0 0); width: 1px; height: 1px; marg
 /* sursor */
 button { cursor: pointer; }
 
+a { text-decoration: none; }
+
 /* float */
 .float_left { float: left; }
 

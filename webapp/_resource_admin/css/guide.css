@@ -26,7 +26,6 @@
 .ulStyle.type03 li { padding-left: 12px; position: relative; }
 .ulStyle.type03 span { position: absolute; left: 0; }
 
-button { line-height: 1.4; }
 button i, button span { vertical-align: middle; }
 button i + span { margin-left: 5px; }
 
