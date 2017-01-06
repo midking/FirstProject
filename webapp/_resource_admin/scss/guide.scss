@@ -69,6 +69,9 @@
 }
 
 .thumbList.type02{
+	a,a:hover,a:active{
+		color:#666;
+	}
 	ul{
 		@extend .clearfix;
 	}
