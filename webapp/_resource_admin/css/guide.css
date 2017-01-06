@@ -56,4 +56,19 @@ button i + span { margin-left: 5px; }
 .white:hover { background: #ededed; background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc)); background: -moz-linear-gradient(top, #fff, #dcdcdc); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc'); }
 .white:active { color: #999; background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff)); background: -moz-linear-gradient(top, #ededed, #fff); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff'); }
 
+/*tab*/
+.tab li { position: relative; float: left; display: inline-block; }
+.tab li a { width: 100%; text-align: center; display: inline-block; text-decoration: none; color: #7b7b7b; }
+.tab li a:hover, .tab li a a:actived { color: #7b7b7b; }
+.tab.type01 ul li { border: 1px solid #7b7b7b; min-width: 13.42%; margin-left: .2em; margin-bottom: .2em; }
+.tab.type01 ul li:first-child { margin-left: 0; }
+.tab.type01 ul li.active a { background: #2F3D4E; color: #fff; }
+.tab.type01 ul li a { padding: .3em .6em; }
+.tab.type02 li { border: 1px solid #7b7b7b; margin-right: 1.5em; background: #f8f8f8; }
+.tab.type02 li.active { border: 1px solid #c2491e; background-color: #e35726; }
+.tab.type02 li.active a { color: #fff; }
+.tab.type02 li:before { content: " > "; position: absolute; left: -1em; width: 0; top: 0.3em; }
+.tab.type02 li:first-child:before { content: none; }
+.tab.type02 li a { padding: .3em .6em; }
+
 /*# sourceMappingURL=guide.css.map */
