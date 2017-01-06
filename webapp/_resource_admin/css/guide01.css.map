@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAEA,UAAU,GACT,UAAU,EAAC,OAAO,EAClB,OAAO,EAAC,MAAM,EACd,MAAM,EAAC,iBAAiB,EACxB,aAAa,EAAC,IAAI",
+"sources": ["../scss/guide01.scss"],
 "names": [],
 "file": "guide01.css"
 }

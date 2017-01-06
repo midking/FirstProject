@@ -2,7 +2,7 @@
 /* font */
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 * { box-sizing: border-box; }
-
+ 
 html, body { font-family: 'Noto Sans KR', sans-serif; height: 100%; }
 
 /* IR */

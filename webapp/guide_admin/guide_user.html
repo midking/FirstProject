@@ -1,0 +1,279 @@
+<!-- <%@ page trimDirectiveWhitespaces="true" %> -->
+<!-- <c:set var="pageTitle" value="OOO프로젝트 관리자"/> -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- 기본 meta -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- //기본 meta -->
+
+	<!-- stylesheet : @import 시키지 않는게 성능상 좋습니다. -->
+	<link rel="stylesheet" href="../_resource_admin/css/reset.css">
+	<link rel="stylesheet" href="../_resource_admin/css/common.css">
+	<link rel="stylesheet" href="../_resource_admin/css/guide.css">
+	<link rel="stylesheet" href="../_resource_admin/css/guide01.css">
+	<link rel="stylesheet" href="../_resource_admin/css/global.css">
+	<link rel="stylesheet" href="../_resource_admin/css/font-awesome.min.css">
+	<!-- //stylesheet -->
+
+	<title>${pageTitle}</title>
+</head>
+<body>
+<!-- 본문 -->
+	<div class="guide">
+		<h1 class="guide_h1">FORMS USER GUIDE!!</h1>
+		<!-- guideIndex -->
+		<div class="guideIndex"></div>
+		<!-- //guideIndex -->
+
+		<h2 class="guide_h2">너비</h2>
+		<div class="guideSummary">
+			<p>너비는 요소의 너비를 변경 할 수 있습니다.</p>
+			<p>너비 값은 10px 부터 500px 까지 제공되며, 단위는 10px 입니다. (10px, 20px, 30px...., 500px)</p>
+		</div>
+		
+		<h3 class="guide_h3">기본 너비</h3>
+		<div class="guideArea">
+			<input type="text" />
+		</div>
+
+		<h3 class="guide_h3">px 너비</h3>
+		<div class="guideSummary">
+			<p>너비는 class 추가로 설정되며, 너비 class를 중복제공 할 수 없습니다.</p>
+			<p>ex) class="w100"</p>
+		</div>
+		<div class="guideArea">
+			<ul>
+				<li class="mb5"><input type="text" class="w50" /></li>
+				<li class="mb5"><input type="text" class="w100" /></li>
+				<li class="mb5"><input type="text" class="w150" /></li>
+				<li class="mb5"><input type="text" class="w200" /></li>
+				<li class="mb5"><input type="text" class="w250" /></li>
+			</ul>
+		</div>
+
+		<h3 class="guide_h3">% 너비</h3>
+		<div class="guideSummary">
+			<p>너비는 class 추가로 설정되며 ( 5%, 10%, 15%, 20%, 25%, 33%, 50%, 100% )가 제공됩니다.</p>
+			<p>ex) class="w25p"</p>
+		</div>
+		<div class="guideArea">
+			<div class="mb5">
+				<input type="text" class="w25p" />
+				<input type="text" class="w25p" />
+				<input type="text" class="w25p" />
+				<input type="text" class="w25p" />
+			</div>
+			<div class="mb5">
+				<input type="text" class="w33p" />
+				<input type="text" class="w33p" />
+				<input type="text" class="w33p" />
+			</div>
+			<div class="mb5">
+				<input type="text" class="w50p" />
+				<input type="text" class="w50p" />
+			</div>
+			<div class="mb5">
+				<input type="text" class="w100p" />
+			</div>
+		</div>
+
+		<h2 class="guide_h2">간격(바깥쪽)</h2>
+		<div class="guideSummary">
+			<p>간격은 요소의 안쪽(padding)과 바깥쪽(margin)의 간격을 변경 할 수 있습니다.</p>
+			<p>간격은 5px 부터 70px 까지 제공되며, 단위는 5px 입니다. ( 5px, 10px, 15px, 20px,...... 70px )</p>
+		</div>
+		<h3 class="guide_h3">기본</h3>
+		<div class="guideArea">
+			<input type="text" />
+			<input type="text" />
+			<input type="text" />
+		</div>
+		
+		<h3 class="guide_h3">바깥쪽(margin) 간격 - 단일</h3>
+		<div class="guideSummary">
+			<p>간격은 class 추가로 설정 됩니다.</p>
+			<p>ex) class="mr20"</p>
+		</div>
+		<div class="guideArea">
+			<div>
+				<input type="text" class="mr20" />
+				<input type="text" class="mr20" />
+				<input type="text" class="mr20" />
+			</div>
+		</div>
+
+		<h3 class="guide_h3">바깥쪽(margin) 간격 - 중복</h3>
+		<div class="guideSummary">
+			<p>간격은 class 중복 제공도 가능합니다.</p>
+			<p>ex) class="mr20 ml20"</p>
+		</div>
+		<div class="guideArea">
+			<div>
+				<input type="text" />
+				<input type="text" class="mr20 ml20" />
+				<input type="text" />
+			</div>
+		</div>
+
+		<h2 class="guide_h2">간격(안쪽)</h2>
+		<div class="guideSummary">
+			<p>간격은 요소의 안쪽(padding)과 바깥쪽(margin)의 간격을 변경 할 수 있습니다.</p>
+			<p>간격은 5px 부터 70px 까지 제공되며, 단위는 5px 입니다. ( 5px, 10px, 15px, 20px,...... 70px )</p>
+		</div>
+		<h3 class="guide_h3">기본</h3>
+		<div class="guideArea">
+			<input type="text" placeholder="왼쪽이 딱 붙어요." />
+			<input type="text" placeholder="왼쪽이 딱 붙어요." />
+			<input type="text" placeholder="왼쪽이 딱 붙어요." />
+		</div>
+		
+		<h3 class="guide_h3">안쪽(padding) 간격 - 단일</h3>
+		<div class="guideSummary">
+			<p>간격은 class 추가로 설정 됩니다.</p>
+			<p>ex) class="pl10"</p>
+		</div>
+		<div class="guideArea">
+			<div>
+				<input type="text" class="pl10" placeholder="왼쪽의 간격이 생기지만 오른쪽은" />
+				<input type="text" class="pl10" placeholder="왼쪽의 간격이 생기지만 오른쪽은" />
+				<input type="text" class="pl10" placeholder="왼쪽의 간격이 생기지만 오른쪽은" />
+			</div>
+		</div>
+
+		<h3 class="guide_h3">바깥쪽(margin) 간격 - 중복</h3>
+		<div class="guideSummary">
+			<p>간격은 class 중복 제공도 가능합니다.</p>
+			<p>ex) class="pr10 pl10"</p>
+		</div>
+		<div class="guideArea">
+			<div>
+				<input type="text" class="pr10 pl10" placeholder="양쪽 모두 간격이 생기게 됩니다." />
+				<input type="text" class="pr10 pl10" placeholder="양쪽 모두 간격이 생기게 됩니다." />
+				<input type="text" class="pr10 pl10" placeholder="양쪽 모두 간격이 생기게 됩니다." />
+			</div>
+		</div>
+
+		<h2 class="guide_h2">빈 박스</h2>
+		<div class="guideSummary">
+			<p>그냥 빈박스 입니다.</p>
+			<p>ex) class="vacantBox"</p>
+		</div>
+		<div class="guideArea">
+			<div class="vacantBox">
+				빈박스
+			</div>
+		</div>
+
+		<h2 class="guide_h2">요소의 위치</h2>
+		<div class="guideSummary">
+			<p>해당 박스 안에 있는 요소는 값에 따라 위치를 변경 할 수 있습니다.</p>
+			<p>위치는 class로 설정하고 ( 좌, 우, 중앙1, 중앙2)를 제공합니다.</p>
+		</div>
+
+		<h3 class="guide_h3">위치1 (좌측)</h3>
+		<div class="guideSummary">
+			<p>ex) class="textLeft"</p>
+		</div>
+		<div class="guideArea">
+			<div class="textLeft">
+				<button type="button" class="black">&lt;버튼</button>
+				<button type="button" class="black">&lt;버튼</button>
+				<button type="button" class="black">&lt;버튼</button>
+			</div>
+		</div>
+
+		<h3 class="guide_h3">위치2 (중앙-좌우)</h3>
+		<div class="guideSummary">
+			<p>ex) class="textCenter"</p>
+		</div>
+		<div class="guideArea">
+			<div class="textCenter">
+				<button type="button" class="black">버튼1</button>
+				<button type="button" class="black">버튼2</button>
+				<button type="button" class="black">버튼3</button>
+			</div>
+		</div>
+
+		<h3 class="guide_h3">위치3 (우측)</h3>
+		<div class="guideSummary">
+			<p>ex) class="textRight"</p>
+		</div>
+		<div class="guideArea">
+			<div class="textRight">
+				<button type="button" class="black">버튼&gt;</button>
+				<button type="button" class="black">버튼&gt;</button>
+				<button type="button" class="black">버튼&gt;</button>
+			</div>
+		</div>
+
+		<h3 class="guide_h3">위치4 (중앙-상하)</h3>
+		<div class="guideSummary">
+			<p>상하로 정렬되지 않는 요소들을 중앙 정렬 시켜 줍니다.</p>
+			<p>ex) class="textMiddle"</p>
+		</div>
+		<div class="guideArea">
+			<div class="">
+				<label for="">정렬 전</label>
+				<select name="" id="">
+					<option value="">선택</option>
+				</select>
+				<input type="text" name="" id="" />
+				<button type="button">클릭</button>
+			</div>
+
+			<br />
+			
+			<div class="textMiddle">
+				<label for="">정렬 전</label>
+				<select name="" id="">
+					<option value="">선택</option>
+				</select>
+				<input type="text" name="" id="" />
+				<button type="button">클릭</button>
+			</div>
+		</div>
+
+		<h2 class="guide_h2">검색</h2>
+		<div class="guideArea">
+			<div class="vacantBox textCenter">
+				<form action="">
+				<fieldset>
+					<legend>리스트 검색</legend>
+					<div class="textMiddle">
+						<select name="" id="">
+							<option value="">선택</option>
+							<option value="">123</option>
+							<option value="">123</option>
+						</select>
+						<input type="text" name="" id="" />
+						<button type="button"><i class="fa fa-search" aria-hidden="true"></i><span>Search</span></button>
+					</div>
+				</fieldset>
+			</form>
+			</div>
+		</div>
+	</div>
+<!-- //본문 -->
+
+<!-- script -->
+	<script src="../_resource/js/vendor/jquery-2.2.4.min.js"></script>
+<!-- //script -->
+
+<!--[if lte IE 8]>
+	<script src="../_resource/js/vendor/jquery-1.12.4.min.js"></script>
+<![endif]-->
+
+<script>
+	$(document).ready(function(){
+		$('.guideArea').each(function(index){
+			var _temp=$(this).html();
+			$(this).append('<div class="codeXmp"><xmp></xmp></div>');
+			$(this).find('xmp').html(_temp);
+		});
+	});
+</script>
+</body>
+</html>
