@@ -1,8 +1,9 @@
 @charset "UTF-8";
-html, body { height: 100%; }
-
-/* Box-sizing */
+/* font */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 * { box-sizing: border-box; }
+
+html, body { font-family: 'Noto Sans KR', sans-serif; height: 100%; }
 
 /* IR */
 legend, .hidden { position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
@@ -245,21 +246,21 @@ a { text-decoration: none; }
 #wrap .loginWrap .login_form .loginCheck label { font-size: 10px; margin-left: 5px; vertical-align: middle; color: #999; }
 #wrap #header { display: table-row; height: 100px; border-bottom: 1px solid #d3d3d3; position: fixed; }
 #wrap #header .logo { float: left; width: 220px; height: 100px; border-bottom: 1px solid #444a50; background-color: #212c3a; }
-#wrap #header .logo h1 { text-align: center; line-height: 100px; }
+#wrap #header .logo h1 { position: relative; z-index: 100; text-align: center; line-height: 100px; }
 #wrap #header .logo h1 a { color: #fff; }
-#wrap #header .top { width: 100%; position: fixed; left: 220px; }
-#wrap #header .top h2 { text-align: center; line-height: 75px; font-size: 33px; margin-left: -220px; }
-#wrap #header .top #nav ul { height: 25px; background: #354559; }
-#wrap #header .top #nav ul li { float: left; margin: 2px 0 0 24px; }
+#wrap #header .top { width: 100%; position: fixed; left: 220px; background: url(../images/common/login_bg_repeat.gif) repeat 50% 50%; }
+#wrap #header .top h2 { text-align: center; line-height: 65px; font-size: 33px; margin-left: -220px; }
+#wrap #header .top #nav ul { height: 35px; background: #354559; }
+#wrap #header .top #nav ul li { float: left; margin: 0 0 0 24px; line-height: 35px; }
 #wrap #header .top #nav ul li.on a { color: #e15525; }
-#wrap #header .top #nav ul li a { color: #fff; font-weight: 600; font-size: 13px; }
+#wrap #header .top #nav ul li a { color: #fff; font-weight: 600; font-size: 15px; display: block; padding: 0 5px; }
 #wrap .container { background-color: #fff; position: fixed; top: 100px; bottom: 0; overflow: auto; width: 100%; }
 #wrap .container .side { height: 100%; width: 220px; position: fixed; background-color: #2b3b4e; }
 #wrap .container .side .administrator { text-align: center; padding: 25px 0 5px; }
-#wrap .container .side .administrator strong, #wrap .container .side .administrator span { display: inline-block; width: 100%; color: #fff; font-size: 12px; margin-bottom: 6px; }
-#wrap .container .side .administrator strong { font-size: 14px; }
+#wrap .container .side .administrator strong, #wrap .container .side .administrator span { display: inline-block; width: 100%; color: #fff; font-size: 13px; margin-bottom: 6px; }
+#wrap .container .side .administrator strong { font-size: 15px; font-weight: bold; }
 #wrap .container .side .btnCenterBox { width: 220px; }
-#wrap .container .side .lnb { position: relative; width: 220px; margin: 10px 0 25px 0; border-top: 1px solid #595f67; border-bottom: 1px solid #6f757b; }
+#wrap .container .side .lnb { position: relative; width: 220px; margin: 25px 0 25px 0; border-top: 1px solid #595f67; border-bottom: 1px solid #6f757b; }
 #wrap .container .side .lnb li { width: 220px; height: auto; }
 #wrap .container .side .lnb li a { display: inline-block; padding: 0 0 0 25px; border-top: 1px solid #6f757b; border-bottom: 1px solid #595f67; width: 100%; height: 31px; line-height: 29px; color: #fff; }
 #wrap .container .side .lnb li.on > a, #wrap .container .side .lnb li a:hover, #wrap .container .side .lnb li a:active { border: none; height: 31px; line-height: 31px; background-color: #e15525; }

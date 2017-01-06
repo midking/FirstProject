@@ -1,8 +1,9 @@
 @charset "UTF-8";
-html, body { height: 100%; }
-
-/* Box-sizing */
+/* font */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 * { box-sizing: border-box; }
+
+html, body { font-family: 'Noto Sans KR', sans-serif; height: 100%; }
 
 /* IR */
 legend, .hidden { position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
