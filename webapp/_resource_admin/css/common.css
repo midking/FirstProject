@@ -1,49 +1,362 @@
-/*
-Error: Invalid CSS after "...t "global.scss"": expected "{", was ";"
-        on line 5 of D:/git/FirstProject/webapp/_resource_admin/scss/common.scss
+@charset "UTF-8";
+/* font */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* { box-sizing: border-box; }
 
-1: @charset "UTF-8";
-2: 
-3: <<<<<<< .merge_file_a03096
-4: =======
-5: @import "global.scss";
-6: 
-7: >>>>>>> .merge_file_a09100
-8: #wrap{
-9: 	width:100%;
-10: 	height:100%;
+html, body { font-family: 'Noto Sans KR', sans-serif; height: 100%; }
 
-Backtrace:
-D:/git/FirstProject/webapp/_resource_admin/scss/common.scss:5
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:23:in `block in render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:22:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...t \"global.scss\"\": expected \"{\", was \";\"\A         on line 5 of D:/git/FirstProject/webapp/_resource_admin/scss/common.scss\A \A 1: @charset \"UTF-8\";\A 2: \A 3: <<<<<<< .merge_file_a03096\A 4: =======\A 5: @import \"global.scss\";\A 6: \A 7: >>>>>>> .merge_file_a09100\A 8: #wrap{\A 9: 	width:100%;\A 10: 	height:100%;"; }
+/* IR */
+legend, .hidden { position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
+
+caption { position: relative; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
+
+/* sursor */
+button { cursor: pointer; }
+
+a { text-decoration: none; }
+
+/* float */
+.float_left { float: left; }
+
+.float_right { float: right; }
+
+.clearfix:after { content: ''; display: table; width: 100%; clear: both; }
+
+/* text 생략 */
+.ellipsis, .ellipsis2, .ellipsis3, .ellipsis4 { width: 100%; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; }
+
+.ellipsis2 { white-space: normal; line-height: 1.2; height: 2.4em; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+.ellipsis3 { white-space: normal; line-height: 1.54; height: 4.62em; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+
+.ellipsis4 { white-space: normal; line-height: 1.54; height: 6.16em; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; }
+
+/* align */
+.textLeft { text-align: left; }
+
+.textCenter { text-align: center; }
+
+.textRight { text-align: right; }
+
+/* 간격 margin */
+.mt5 { margin-top: 5px !important; }
+
+.mt10 { margin-top: 10px !important; }
+
+.mt15 { margin-top: 15px !important; }
+
+.mt20 { margin-top: 20px !important; }
+
+.mt25 { margin-top: 25px !important; }
+
+.mt30 { margin-top: 30px !important; }
+
+.mt35 { margin-top: 35px !important; }
+
+.mt40 { margin-top: 40px !important; }
+
+.mt45 { margin-top: 45px !important; }
+
+.mt50 { margin-top: 50px !important; }
+
+.mt55 { margin-top: 55px !important; }
+
+.mt60 { margin-top: 60px !important; }
+
+.mr5 { margin-right: 5px !important; }
+
+.mr10 { margin-right: 10px !important; }
+
+.mr15 { margin-right: 15px !important; }
+
+.mr20 { margin-right: 20px !important; }
+
+.mr25 { margin-right: 25px !important; }
+
+.mr30 { margin-right: 30px !important; }
+
+.mr35 { margin-right: 35px !important; }
+
+.mr40 { margin-right: 40px !important; }
+
+.mr45 { margin-right: 45px !important; }
+
+.mr50 { margin-right: 50px !important; }
+
+.mr55 { margin-right: 55px !important; }
+
+.mr60 { margin-right: 60px !important; }
+
+.mb5 { margin-bottom: 5px !important; }
+
+.mb10 { margin-bottom: 10px !important; }
+
+.mb15 { margin-bottom: 15px !important; }
+
+.mb20 { margin-bottom: 20px !important; }
+
+.mb25 { margin-bottom: 25px !important; }
+
+.mb30 { margin-bottom: 30px !important; }
+
+.mb35 { margin-bottom: 35px !important; }
+
+.mb40 { margin-bottom: 40px !important; }
+
+.mb45 { margin-bottom: 45px !important; }
+
+.mb50 { margin-bottom: 50px !important; }
+
+.mb55 { margin-bottom: 55px !important; }
+
+.mb60 { margin-bottom: 60px !important; }
+
+.ml5 { margin-left: 5px !important; }
+
+.ml10 { margin-left: 10px !important; }
+
+.ml15 { margin-left: 15px !important; }
+
+.ml20 { margin-left: 20px !important; }
+
+.ml25 { margin-left: 25px !important; }
+
+.ml30 { margin-left: 30px !important; }
+
+.ml35 { margin-left: 35px !important; }
+
+.ml40 { margin-left: 40px !important; }
+
+.ml45 { margin-left: 45px !important; }
+
+.ml50 { margin-left: 50px !important; }
+
+.ml55 { margin-left: 55px !important; }
+
+.ml60 { margin-left: 60px !important; }
+
+/* 간격 padding */
+.pt5 { padding-top: 5px !important; }
+
+.pt10 { padding-top: 10px !important; }
+
+.pt15 { padding-top: 15px !important; }
+
+.pt20 { padding-top: 20px !important; }
+
+.pt25 { padding-top: 25px !important; }
+
+.pt30 { padding-top: 30px !important; }
+
+.pt35 { padding-top: 35px !important; }
+
+.pt40 { padding-top: 40px !important; }
+
+.pt45 { padding-top: 45px !important; }
+
+.pt50 { padding-top: 50px !important; }
+
+.pt55 { padding-top: 55px !important; }
+
+.pt60 { padding-top: 60px !important; }
+
+.pr5 { padding-right: 5px !important; }
+
+.pr10 { padding-right: 10px !important; }
+
+.pr15 { padding-right: 15px !important; }
+
+.pr20 { padding-right: 20px !important; }
+
+.pr25 { padding-right: 25px !important; }
+
+.pr30 { padding-right: 30px !important; }
+
+.pr35 { padding-right: 35px !important; }
+
+.pr40 { padding-right: 40px !important; }
+
+.pr45 { padding-right: 45px !important; }
+
+.pr50 { padding-right: 50px !important; }
+
+.pr55 { padding-right: 55px !important; }
+
+.pr60 { padding-right: 60px !important; }
+
+.pb5 { padding-bottom: 5px !important; }
+
+.pb10 { padding-bottom: 10px !important; }
+
+.pb15 { padding-bottom: 15px !important; }
+
+.pb20 { padding-bottom: 20px !important; }
+
+.pb25 { padding-bottom: 25px !important; }
+
+.pb30 { padding-bottom: 30px !important; }
+
+.pb35 { padding-bottom: 35px !important; }
+
+.pb40 { padding-bottom: 40px !important; }
+
+.pb45 { padding-bottom: 45px !important; }
+
+.pb50 { padding-bottom: 50px !important; }
+
+.pb55 { padding-bottom: 55px !important; }
+
+.pb60 { padding-bottom: 60px !important; }
+
+.pl5 { padding-left: 5px !important; }
+
+.pl10 { padding-left: 10px !important; }
+
+.pl15 { padding-left: 15px !important; }
+
+.pl20 { padding-left: 20px !important; }
+
+.pl25 { padding-left: 25px !important; }
+
+.pl30 { padding-left: 30px !important; }
+
+.pl35 { padding-left: 35px !important; }
+
+.pl40 { padding-left: 40px !important; }
+
+.pl45 { padding-left: 45px !important; }
+
+.pl50 { padding-left: 50px !important; }
+
+.pl55 { padding-left: 55px !important; }
+
+.pl60 { padding-left: 60px !important; }
+
+#wrap { width: 100%; height: 100%; display: table; }
+#wrap.login { background: url(../images/common/login_bg_repeat.gif) repeat 50% 50%; }
+#wrap .loginWrap { position: relative; margin: 15% auto; width: 558px; }
+#wrap .loginWrap h1 { color: #fff; font-size: 38px; }
+#wrap .loginWrap .login_form { width: 558px; height: 284px; padding: 35px 75px 80px; background: url(../images/common/bg_loginBox.png) no-repeat left top; }
+#wrap .loginWrap .login_form .login { position: relative; margin-top: 19px; }
+#wrap .loginWrap .login_form .login .login_row { display: inline-block; width: 260px; height: 34px; line-height: 34px; padding-left: 12px; background: #f3f3f3; border: 1px solid #c1c5c8; border-radius: 5px; margin-bottom: 11px; }
+#wrap .loginWrap .login_form .login .login_row input { vertical-align: top; padding: 0 6px; width: 90%; height: 32px; line-height: 32px; background: none; border: 0; }
+#wrap .loginWrap .login_form .login #btnLogin { position: absolute; right: 0; top: 0; display: inline-block; width: 133px; height: 79px; border: none; background: url(../images/common/adm_login_btn.png) no-repeat; }
+#wrap .loginWrap .login_form .loginCheck { margin-top: 9px; }
+#wrap .loginWrap .login_form .loginCheck input { vertical-align: middle; }
+#wrap .loginWrap .login_form .loginCheck label { font-size: 10px; margin-left: 5px; vertical-align: middle; color: #999; }
+#wrap #header { display: table-row; height: 100px; border-bottom: 1px solid #d3d3d3; position: fixed; }
+#wrap #header .logo { float: left; width: 220px; height: 100px; border-bottom: 1px solid #444a50; background-color: #212c3a; }
+#wrap #header .logo h1 { position: relative; z-index: 100; text-align: center; line-height: 100px; }
+#wrap #header .logo h1 a { color: #fff; }
+#wrap #header .top { width: 100%; position: fixed; left: 220px; background: url(../images/common/login_bg_repeat.gif) repeat 50% 50%; }
+#wrap #header .top h2 { text-align: center; line-height: 65px; font-size: 33px; margin-left: -220px; }
+#wrap #header .top #nav ul { height: 35px; background: #354559; }
+#wrap #header .top #nav ul li { float: left; margin: 0 0 0 24px; line-height: 35px; }
+#wrap #header .top #nav ul li.on a { color: #e15525; }
+#wrap #header .top #nav ul li a { color: #fff; font-weight: 600; font-size: 15px; display: block; padding: 0 5px; }
+#wrap .container { background-color: #fff; position: fixed; top: 100px; bottom: 0; overflow: auto; width: 100%; }
+#wrap .container .side { height: 100%; width: 220px; position: fixed; background-color: #2b3b4e; }
+#wrap .container .side .administrator { text-align: center; padding: 25px 0 5px; }
+#wrap .container .side .administrator strong, #wrap .container .side .administrator span { display: inline-block; width: 100%; color: #fff; font-size: 13px; margin-bottom: 6px; }
+#wrap .container .side .administrator strong { font-size: 15px; font-weight: bold; }
+#wrap .container .side .btnCenterBox { width: 220px; }
+#wrap .container .side .lnb { position: relative; width: 220px; margin: 25px 0 25px 0; border-top: 1px solid #595f67; border-bottom: 1px solid #6f757b; }
+#wrap .container .side .lnb li { width: 220px; height: auto; }
+#wrap .container .side .lnb li a { display: inline-block; padding: 0 0 0 25px; border-top: 1px solid #6f757b; border-bottom: 1px solid #595f67; width: 100%; height: 31px; line-height: 29px; color: #fff; }
+#wrap .container .side .lnb li.on > a, #wrap .container .side .lnb li a:hover, #wrap .container .side .lnb li a:active { border: none; height: 31px; line-height: 31px; background-color: #e15525; }
+#wrap .container .side .lnb li ul li a { padding-left: 40px; }
+#wrap .container .content { /* height:100%;
+display:table-cell;
+// width:75%;
+padding:30px 150px 0 0;
+// margin:0 0 100px 270px;
+// height:100%; */ width: 75%; padding: 30px 0 0; position: absolute; margin-left: 270px; margin-bottom: 100px; }
+#wrap .container .content .location { margin-bottom: 17px; }
+#wrap .container .content .location h2 { font-size: 2.165em; line-height: 26px; color: #2c2928; display: inline-block; }
+#wrap .container .content .location span { margin: 4px 0 0 18px; font-size: 0.925em; color: #818181; }
+#wrap .container .content .location span:before { content: ""; margin-right: 9px; width: 1px; height: 10px; display: inline-block; background-color: #cdcdcd; }
+#wrap .container .content .location ul { display: block; text-align: right; margin-top: 5px; padding-left: 15px; }
+#wrap .container .content .location ul li { display: inline-block; font-size: 12px; color: #a0a3a5; padding-right: 5px; }
+#wrap .container .content .location ul li:first-child:before { background: none; }
+#wrap .container .content .location ul li:before { content: ""; display: inline-block; width: 2px; height: 8px; margin-right: 9px; background: url(../images/common/userNav_arrow.gif) no-repeat right 50%; }
+#wrap .container .content .boardTotal { clear: both; margin-top: 30px; padding-bottom: 2px; text-align: left; }
+#wrap .container .content .calendar { margin: 30px 0 10px; }
+#wrap .container .content .calendar .monthWrap { display: inline-block; }
+#wrap .container .content .calendar .monthWrap button { font-size: 13px; padding: 3px 7px 3px 0px; }
+#wrap .container .content .calendar .monthWrap button:before { content: ""; margin-right: 10px; display: inline-block; width: 1px; height: 8px; background-color: #000; }
+#wrap .container .content .calendar .monthWrap button:first-child:before { background: none; }
+#wrap .container .content .replyWrap { padding: 25px 0; overflow: hidden; }
+#wrap .container .content .replyWrap ul { margin-top: 0; position: relative; padding-left: 20px; }
+#wrap .container .content .replyWrap ul:first-child { padding-left: 0; border-bottom: 1px solid #C8C8C8; }
+#wrap .container .content .replyWrap ul:first-child > li:before, #wrap .container .content .replyWrap ul:first-child > li:after { background: none; }
+#wrap .container .content .replyWrap ul:first-child > li > .reply { padding-left: 0; }
+#wrap .container .content .replyWrap ul li { position: relative; font-size: 11px; }
+#wrap .container .content .replyWrap ul li:before, #wrap .container .content .replyWrap ul li:after { content: ''; position: absolute; right: auto; }
+#wrap .container .content .replyWrap ul li:before { width: 8px; height: 8px; top: 10px; background: url(../images/common/reply.png) no-repeat; }
+#wrap .container .content .replyWrap ul li:after { border-top: 1px solid #C8C8C8; top: 0px; left: -50%; width: 150%; }
+#wrap .container .content .replyWrap ul li.last:before { height: 15px; }
+#wrap .container .content .replyWrap ul li strong { padding-right: 7px; font-size: 15px; }
+#wrap .container .content .replyWrap ul li input[type="text"] { width: 100%; margin-top: 1px; }
+#wrap .container .content .replyWrap ul li .comment { font-size: 13px; padding: 5px 0; }
+#wrap .container .content .replyWrap ul li .reply { padding: 5px 0 5px 15px; }
+#wrap .container .content .replyWrap ul li .reply .btnWrap { display: inline-block; float: right; border-bottom: none; margin-top: 0; padding: 0; width: auto; }
+#wrap .container .content .replyWrap .replyRegist { background-color: #F8F8F8; padding: 13px; border-bottom: 1px solid #C8C8C8; }
+#wrap .container .content .replyWrap .textareaWrap { position: relative; padding: 5px 0; padding-right: 60px; }
+#wrap .container .content .replyWrap .textareaWrap .replyMod { width: 100%; overflow: auto; line-height: 14px; height: 53px; resize: none; }
+#wrap .container .content .replyWrap .textareaWrap .btnAdd, #wrap .container .content .replyWrap .textareaWrap .btnUpdate { position: absolute; top: 5px; right: 0; background: #0094ff; width: 56px; height: 53px; border-radius: 7px; border: 1px solid #246095; color: #fff; font-size: 14px; font-weight: 600; }
+#wrap .container .content .researchWrap { background: #f1f1f1; border: 1px solid #e3e3e3; padding: 25px 1%; min-height: 300px; }
+#wrap .container .content .researchWrap .btnAddQuiz { background: #0094ff; width: 80px; height: 35px; border-radius: 7px; border: 1px solid #246095; color: #fff; font-weight: 600; }
+#wrap .container .content .researchWrap dl { position: relative; width: 100%; }
+#wrap .container .content .researchWrap dl dt { padding: 0 30px 0 50px; margin: 10px 0; }
+#wrap .container .content .researchWrap dl dt strong { position: absolute; left: 0; }
+#wrap .container .content .researchWrap dl dt button { position: absolute; right: 0; top: 0; }
+#wrap .container .content .researchWrap dl dt input[type=text] { width: 100%; }
+#wrap .container .content .researchWrap dl dd ul li { position: relative; min-height: 21px; padding: 5px 55px 5px 50px; }
+#wrap .container .content .researchWrap dl dd ul li label { position: absolute; left: 12px; }
+#wrap .container .content .researchWrap dl dd ul li input[type="text"] { width: 100%; }
+#wrap .container .content .researchWrap dl dd ul li .btnWrap { position: absolute; display: inline-block; right: 0; top: 5px; }
+#wrap .container .content .researchWrap ul .qz_ex { width: 75%; }
+#wrap .container .content .researchWrap ul .result_wrap { position: absolute; right: 0; width: 262px; }
+#wrap .container .content .researchWrap ul .result_box { width: 102px; height: 12px; display: inline-block; background: #dfdfdf; position: relative; vertical-align: middle; }
+#wrap .container .content .researchWrap ul .result_box .graph { position: absolute; height: 12px; background: #7dd3a3; display: inline-block; }
+#wrap .container .content .researchWrap ul strong { color: #34b26b; vertical-align: middle; padding: 0 7px 0 17px; }
+#wrap .container .content .researchWrap ul span { color: #393939; }
+#wrap .container .content .researchWrap .qz_result { line-height: 46px; color: #33b36b; background: #fff; font-weight: 600; font-size: 16px; padding: 0 17px 0 44px; margin-top: 17px; }
+#wrap .container .content .researchWrap .qz_result strong { font-size: 14px; }
+#wrap .box { border: 1px solid #ccc; padding: 5px 10px; }
+#wrap .box ul li a { color: #505050; width: 100%; line-height: 24px; }
+#wrap .box ul li a:before { content: '- '; }
+#wrap .box ul li a.dim:before { content: '- '; color: #999; }
+#wrap .box ul li a.dim span { color: #999; }
+#wrap .box ul li a.ongoing span { font-weight: bold; }
+#wrap .box ul li a span:first-child + span { margin-left: 10px; width: 80px; font-size: 12px; color: #9e9e9e; }
+#wrap .box ul li a .ing { margin-left: 10px; font-size: 11px; padding: 2px 5px; background-color: #FF5A00; color: #fff; }
+#wrap .box ul li .btns button { border: none; margin-right: 2px; font-size: 11px; border-radius: 2px; padding: 2px 5px; }
+
+/* error page */
+.errorPage { text-align: center; padding-top: 15%; }
+.errorPage div { color: #252525; display: inline-block; vertical-align: middle; }
+.errorPage div h1 { font-size: 50px; font-weight: bold; line-height: 1.44; }
+.errorPage div h2 { font-size: 25px; font-weight: bold; line-height: 2.2; }
+.errorPage div p { font-size: 16px; line-height: 1.3; }
+
+/* popup */
+.popup { display: none; position: fixed; top: 100; left: 0; width: 100%; height: 100%; z-index: 100; }
+.popup.on { display: block; }
+.popup .bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.5; filter: alpha(opacity=50); }
+.popup table.blueList, .popup .topBox { margin-bottom: 0px; }
+.popup .modal-header { position: relative; font-size: 16px; color: #fff; background: #3571B5; padding: 10px 25px; background-color: #FF5A00; }
+.popup .modal-close { position: absolute; top: 0; right: 0; }
+.popup .modal-close a { display: inline-block; padding: 9px 13px; font-size: 20px; color: #fff; }
+.popup .modal-layer { display: block; position: absolute; top: 10%; left: 50%; width: 410px; height: auto; background-color: #fff; z-index: 10; }
+.popup .modal-layer .modal-container { padding: 20px 25px; }
+.popup .modal-layer p.ctxt { color: #666; line-height: 25px; }
+.popup .modal-layer .btn-r { width: 100%; border-top: 1px solid #DDD; text-align: right; padding-top: 25px; }
+.popup .modal-layer .modal-conts { padding-bottom: 25px; }
+.popup .modal-layer .modal-conts input { padding: 0 10px; height: 30px; }
+
+#loading { display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: url(../images/common/bg.png); z-index: 9999; }
+#loading div { -moz-box-shadow: 0px 0px 7px #555; -webkit-box-shadow: 0px 0px 7px #555; -ms-box-shadow: 0px 0px 7px #555; box-shadow: 0px 0px 7px #555; text-align: center; font-size: 12px; font-weight: bold; color: #555; background: #fff; padding: 30px; position: absolute; top: 50%; left: 50%; margin-left: -74px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+#loading div img { margin-bottom: 2px; }
+
+/*# sourceMappingURL=common.css.map */
