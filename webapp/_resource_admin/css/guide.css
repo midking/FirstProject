@@ -20,7 +20,7 @@ a { text-decoration: none; }
 
 .float_right { float: right; }
 
-.clearfix:after, .thumbList.type01 figure:after, .thumbList.type02 ul:after, .thumbList.type03 figure:after, .tableRegist ul li:after, .tableView dt .headSub:after, .paging:after { content: ''; display: table; width: 100%; clear: both; }
+.clearfix:after, .thumbList.type01 figure:after, .thumbList.type02 ul:after, .thumbList.type03 figure:after, .tableView dd.headSub:after, .paging ul:after { content: ''; display: table; width: 100%; clear: both; }
 
 /* text 생략 */
 .ellipsis, .ellipsis2, .ellipsis3, .ellipsis4 { width: 100%; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; }
@@ -486,36 +486,34 @@ button i + span { margin-left: 5px; }
 .caution { font-size: 12px; margin-bottom: 5px; text-align: right; }
 
 .tableRegist { width: 100%; font-size: 12px; border-top: 2px solid #6a6a6a; }
-.tableRegist ul li { border-bottom: 1px solid #c8c8c8; background: #f8f8f8; }
-.tableRegist .tableTh, .tableRegist .tableTd { padding: 5px; color: #424242; line-height: 1.5; word-break: break-all; float: left; }
-.tableRegist .tableTh select, .tableRegist .tableTh input, .tableRegist .tableTh button, .tableRegist .tableTh img, .tableRegist .tableTh textarea, .tableRegist .tableTh label, .tableRegist .tableTh span, .tableRegist .tableTh i, .tableRegist .tableTd select, .tableRegist .tableTd input, .tableRegist .tableTd button, .tableRegist .tableTd img, .tableRegist .tableTd textarea, .tableRegist .tableTd label, .tableRegist .tableTd span, .tableRegist .tableTd i { vertical-align: middle; }
-.tableRegist .tableTh i, .tableRegist .tableTd i { line-height: 0; }
-.tableRegist .tableTh { width: 20%; text-align: center; }
-.tableRegist .tableTd { padding-left: 15px; padding-right: 15px; border-left: 1px solid #cecece; width: 80%; text-align: left; background-color: #fff; }
-.tableRegist .tableTd a { color: #424242; }
-.tableRegist .tableTd.contents { height: 250px; }
-.tableRegist .tableTd .errMsg { color: red !important; }
-.tableRegist .tableTd #file_div { position: relative; margin-top: 10px; }
-.tableRegist .tableTd #file_div:first-child { margin-top: 0; }
-.tableRegist .tableTd #file_div .fileBtnGroup { float: right; }
-.tableRegist .tableTd #file_div .fileBtnGroup .removeBtn { display: none; }
-.tableRegist .tableTd #file_div .fileBtnGroup .removeBtn.on { display: inline-block; }
+.tableRegist th, .tableRegist td { padding: 5px; color: #424242; line-height: 1.5; word-break: break-all; border-bottom: 1px solid #c8c8c8; }
+.tableRegist th select, .tableRegist th input, .tableRegist th button, .tableRegist th img, .tableRegist th textarea, .tableRegist th label, .tableRegist th span, .tableRegist th i, .tableRegist td select, .tableRegist td input, .tableRegist td button, .tableRegist td img, .tableRegist td textarea, .tableRegist td label, .tableRegist td span, .tableRegist td i { vertical-align: middle; }
+.tableRegist th i, .tableRegist td i { line-height: 0; }
+.tableRegist th { width: 20%; text-align: center; background: #f8f8f8; }
+.tableRegist td { padding-left: 15px; padding-right: 15px; border-left: 1px solid #cecece; width: 80%; text-align: left; background-color: #fff; }
+.tableRegist td a { color: #424242; }
+.tableRegist td.contents { height: 250px; }
+.tableRegist td .errMsg { color: red !important; }
+.tableRegist td #file_div { position: relative; margin-top: 10px; }
+.tableRegist td #file_div:first-child { margin-top: 0; }
+.tableRegist td #file_div .fileBtnGroup { float: right; }
+.tableRegist td #file_div .fileBtnGroup .removeBtn { display: none; }
+.tableRegist td #file_div .fileBtnGroup .removeBtn.on { display: inline-block; }
 
 .tableView { width: 100%; font-size: 12px; border-top: 2px solid #6a6a6a; }
 .tableView dt h2 { text-align: left; padding: 0 15px; height: 33px; line-height: 33px; font-size: 14px; color: #333333; border-bottom: 1px solid #d3d3d3; background: #f8f8f8; word-break: break-all; }
-.tableView dt .headSub { height: 28px; line-height: 28px; border-bottom: 1px solid #ebebeb; background-color: #fff; }
-.tableView dt .headSub .float_left { padding-left: 15px; }
-.tableView dt .headSub .float_left span { margin-right: 10px; }
-.tableView dt .headSub .float_left a i { margin-right: 5px; }
-.tableView dt .headSub .float_right ul li { float: left; margin-left: 25px; }
-.tableView dt .headSub .float_right ul li span { margin-left: 8px; }
 .tableView dd { padding: 10px 16px; text-align: left; word-break: break-all; border-bottom: 1px solid #ebebeb; background-color: #fff; }
+.tableView dd.headSub { border-bottom: 1px solid #ebebeb; background-color: #fff; }
+.tableView dd.headSub .float_left span { margin-right: 10px; }
+.tableView dd.headSub .float_left a i { margin-right: 5px; }
+.tableView dd.headSub .float_right ul li { float: left; }
+.tableView dd.headSub .float_right ul li span { margin-left: 8px; }
 .tableView .pageLink { border-top: 1px solid #cdcdcd; }
-.tableView .pageLink dt, .tableView .pageLink dd { float: left; border-bottom: 1px solid #d5d5d5; line-height: 40px; height: 40px; color: #777; }
-.tableView .pageLink dt { width: 15%; text-align: center; background: #f8f8f8; }
-.tableView .pageLink dt span { padding-left: 7px; }
-.tableView .pageLink dt i, .tableView .pageLink dt span { vertical-align: middle; }
-.tableView .pageLink dd { padding: 0; width: 85%; padding-left: 20px; white-space: nowrap; overflow: hidden; text-align-last: auto; text-overflow: ellipsis; }
+.tableView .pageLink .prevLink, .tableView .pageLink .nexkLink { width: 100%; border-bottom: 1px solid #d5d5d5; color: #777; }
+.tableView .pageLink .prevLink div, .tableView .pageLink .nexkLink div { width: 15%; display: inline-block; text-align: center; background: #f8f8f8; line-height: 40px; height: 40px; }
+.tableView .pageLink .prevLink div span, .tableView .pageLink .nexkLink div span { padding-left: 7px; }
+.tableView .pageLink .prevLink div i, .tableView .pageLink .prevLink div span, .tableView .pageLink .nexkLink div i, .tableView .pageLink .nexkLink div span { vertical-align: middle; }
+.tableView .pageLink .prevLink a, .tableView .pageLink .nexkLink a { width: 85%; padding-left: 20px; white-space: nowrap; overflow: hidden; text-align-last: auto; text-overflow: ellipsis; }
 
 .red { color: #f00 !important; }
 

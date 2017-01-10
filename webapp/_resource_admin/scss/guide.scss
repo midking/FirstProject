@@ -421,19 +421,13 @@ button{
 	width:100%;
 	font-size:12px;
 	border-top:2px solid #6a6a6a;
-	ul{
-		li{
-			border-bottom:1px solid #c8c8c8;
-			background:#f8f8f8;
-			@extend .clearfix;
-		}
-	}
-	.tableTh,.tableTd{
+	
+	th,td{
 		padding:5px;
 		color:#424242;
 		line-height:1.5;
 		word-break:break-all;
-		float:left;
+		border-bottom:1px solid #c8c8c8;
 		select,input,button,img,textarea,label,span,i{
 			vertical-align:middle;
 		}
@@ -441,11 +435,12 @@ button{
 			line-height:0;
 		}
 	}
-	.tableTh{
+	th{
 		width:20%;
 		text-align:center;
+		background:#f8f8f8;
 	}
-	.tableTd{
+	td{
 		padding-left:15px;
 		padding-right:15px;
 		border-left:1px solid #cecece;
@@ -495,14 +490,19 @@ button{
 			background:#f8f8f8;
 			word-break:break-all;
 		}
-		.headSub{
+		
+	}
+	dd{
+		padding:10px 16px;
+		text-align:left;
+		word-break:break-all;
+		border-bottom:1px solid #ebebeb;
+		background-color:#fff;
+		&.headSub{
 			@extend .clearfix;
-			height:28px;
-			line-height:28px;
 			border-bottom:1px solid #ebebeb;
 			background-color:#fff;
 			.float_left{
-				padding-left:15px;
 				span{
 					margin-right:10px;
 				}
@@ -513,7 +513,6 @@ button{
 			.float_right{
 				ul li{
 					float:left;
-					margin-left:25px;
 					span{
 						margin-left:8px;
 					}
@@ -521,42 +520,36 @@ button{
 			}
 		}
 	}
-	dd{
-		padding:10px 16px;
-		text-align:left;
-		word-break:break-all;
-		border-bottom:1px solid #ebebeb;
-		background-color:#fff;
-	}
 	.pageLink{
 		border-top:1px solid #cdcdcd;
-		dt,dd{
-			float:left;
+		.prevLink,.nexkLink{
+			width:100%;
 			border-bottom:1px solid #d5d5d5;
-			line-height:40px;
-			height:40px;
 			color:#777;
-		}
-		dt{
-			width:15%;
-			text-align:center;
-			background:#f8f8f8;
-			span{
-				padding-left:7px;
+			div{
+				width:15%;
+				display:inline-block;
+				text-align:center;
+				background:#f8f8f8;
+				line-height:40px;
+				height:40px;
+				span{
+					padding-left:7px;
+				}
+				i,span{
+					vertical-align:middle;
+				}
 			}
-			i,span{
-				vertical-align:middle;
+			a{
+				width:85%;
+				padding-left:20px;
+				white-space:nowrap;
+				overflow:hidden;
+				text-align-last:auto;
+				text-overflow:ellipsis;
 			}
 		}
-		dd{
-			padding:0;
-			width:85%;
-			padding-left:20px;
-			white-space:nowrap;
-			overflow:hidden;
-			text-align-last:auto;
-			text-overflow:ellipsis;
-		}
+		
 	}
 }
 .red{
@@ -564,11 +557,11 @@ button{
 }
 .paging{
 	text-align:center;
-	@extend .clearfix;
 	ul{
 		font-size:0;
 		letter-spacing:0;
 		word-spacing:0;
+		@extend .clearfix;
 		li{
 			width:auto;
 			height:auto;
