@@ -424,13 +424,13 @@ select { padding: 0; }
 #wrap .container .side .lnb li ul li a { padding-left: 40px; }
 #wrap .container .content { width: 75%; padding: 30px 0 0; position: absolute; margin-left: 270px; margin-bottom: 100px; }
 #wrap .container .content .location { margin-bottom: 17px; }
-#wrap .container .content .location h2 { font-size: 2.165em; line-height: 26px; color: #2c2928; display: inline-block; }
+#wrap .container .content .location h1 { font-size: 2.165em; color: #2c2928; display: inline-block; font-weight: bold; }
 #wrap .container .content .location span { margin: 4px 0 0 18px; font-size: 0.925em; color: #818181; }
 #wrap .container .content .location span:before { content: ""; margin-right: 9px; width: 1px; height: 10px; display: inline-block; background-color: #cdcdcd; }
 #wrap .container .content .location ul { display: block; text-align: right; margin-top: 5px; padding-left: 15px; }
 #wrap .container .content .location ul li { display: inline-block; font-size: 12px; color: #a0a3a5; padding-right: 5px; }
-#wrap .container .content .location ul li:first-child:before { background: none; }
-#wrap .container .content .location ul li:before { content: ""; display: inline-block; width: 2px; height: 8px; margin-right: 9px; background: url(../images/common/userNav_arrow.gif) no-repeat right 50%; }
+#wrap .container .content .location ul li:first-child:before { border: none; }
+#wrap .container .content .location ul li:before { content: ""; position: relative; top: -2px; display: inline-block; margin-right: 9px; width: 0; height: 0; border-top: 2px solid transparent; border-bottom: 2px solid transparent; border-left: 2px solid gray; }
 #wrap .container .content .boardTotal { clear: both; margin-top: 30px; padding-bottom: 2px; text-align: left; }
 #wrap .container .content .calendar { margin: 30px 0 10px; }
 #wrap .container .content .calendar .monthWrap { display: inline-block; }

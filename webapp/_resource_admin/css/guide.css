@@ -426,7 +426,7 @@ select { padding: 0; }
 button i, button span { vertical-align: middle; }
 button i + span { margin-left: 5px; }
 
-.button { display: inline-block; zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */ *display: inline; vertical-align: baseline; margin: 0 2px; outline: none; cursor: pointer; text-align: center; text-decoration: none; font: 14px; background-image: none; background-color: transparent; white-space: nowrap; padding: .5em 2em .55em; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); -webkit-border-radius: .5em; -moz-border-radius: .5em; border-radius: .5em; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); height: auto; }
+.button { display: inline-block; zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */ *display: inline; vertical-align: top; margin: 0 2px; outline: none; cursor: pointer; text-align: center; text-decoration: none; font-size: 14px; background-image: none; background-color: transparent; white-space: nowrap; padding: .5em 2em .55em; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); -webkit-border-radius: .5em; -moz-border-radius: .5em; border-radius: .5em; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); height: auto; line-height: 1; }
 .button:hover { text-decoration: none; }
 .button:active { position: relative; top: 1px; }
 .button.icon { text-shadow: none; box-shadow: none; padding: .2em .5em; border: none; }
@@ -483,7 +483,8 @@ button i + span { margin-left: 5px; }
 .tableList.type02 table th, .tableList.type02 table td { border-right: 1px solid #b8b8b8; border-top: 1px solid #b8b8b8; padding: 7.5px 5px; background: #fff; }
 .tableList.type02 table th:first-child, .tableList.type02 table td:first-child { border-left: 1px solid #b8b8b8; }
 
-.caution { font-size: 12px; margin-bottom: 5px; text-align: right; }
+.caution { font-size: 13px; margin-bottom: 10px; text-align: right; }
+.caution strong { font-weight: bold; }
 
 .tableRegist { width: 100%; font-size: 12px; border-top: 2px solid #6a6a6a; }
 .tableRegist th, .tableRegist td { padding: 5px; color: #424242; line-height: 1.5; word-break: break-all; border-bottom: 1px solid #c8c8c8; }
@@ -504,20 +505,22 @@ button i + span { margin-left: 5px; }
 .tableView dt h2 { text-align: left; padding: 0 15px; height: 33px; line-height: 33px; font-size: 14px; color: #333333; border-bottom: 1px solid #d3d3d3; background: #f8f8f8; word-break: break-all; }
 .tableView dd { padding: 10px 16px; text-align: left; word-break: break-all; border-bottom: 1px solid #ebebeb; background-color: #fff; }
 .tableView dd.headSub { border-bottom: 1px solid #ebebeb; background-color: #fff; }
+.tableView dd.headSub a, .tableView dd.headSub a:hover, .tableView dd.headSub a:active { color: #666; }
 .tableView dd.headSub .float_left span { margin-right: 10px; }
 .tableView dd.headSub .float_left a i { margin-right: 5px; }
-.tableView dd.headSub .float_right ul li { float: left; }
-.tableView dd.headSub .float_right ul li span { margin-left: 8px; }
+.tableView dd.headSub .float_right ul li { float: left; margin-left: 11px; }
+.tableView dd.headSub .float_right ul li span { margin-left: 5px; }
 .tableView .pageLink { border-top: 1px solid #cdcdcd; }
 .tableView .pageLink .prevLink, .tableView .pageLink .nexkLink { width: 100%; border-bottom: 1px solid #d5d5d5; color: #777; }
-.tableView .pageLink .prevLink div, .tableView .pageLink .nexkLink div { width: 15%; display: inline-block; text-align: center; background: #f8f8f8; line-height: 40px; height: 40px; }
+.tableView .pageLink .prevLink div, .tableView .pageLink .nexkLink div { width: 12%; display: inline-block; text-align: center; background: #f8f8f8; line-height: 35px; height: 35px; }
 .tableView .pageLink .prevLink div span, .tableView .pageLink .nexkLink div span { padding-left: 7px; }
 .tableView .pageLink .prevLink div i, .tableView .pageLink .prevLink div span, .tableView .pageLink .nexkLink div i, .tableView .pageLink .nexkLink div span { vertical-align: middle; }
-.tableView .pageLink .prevLink a, .tableView .pageLink .nexkLink a { width: 85%; padding-left: 20px; white-space: nowrap; overflow: hidden; text-align-last: auto; text-overflow: ellipsis; }
+.tableView .pageLink .prevLink a, .tableView .pageLink .nexkLink a { width: 88%; padding-left: 20px; white-space: nowrap; overflow: hidden; text-align-last: auto; text-overflow: ellipsis; color: #777; }
+.tableView .pageLink .prevLink a:hover, .tableView .pageLink .prevLink a:active, .tableView .pageLink .nexkLink a:hover, .tableView .pageLink .nexkLink a:active { color: #777; }
 
 .red { color: #f00 !important; }
 
-.paging { text-align: center; }
+.paging { text-align: center; margin-top: 20px; }
 .paging ul { font-size: 0; letter-spacing: 0; word-spacing: 0; }
 .paging ul li { width: auto; height: auto; display: inline-block; background-color: inherit; margin-left: 7px; overflow: hidden; display: inline-block; vertical-align: top; }
 .paging ul li:first-child { margin-left: 0; }
