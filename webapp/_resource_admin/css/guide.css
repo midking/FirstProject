@@ -37,11 +37,11 @@ select, input { height: 22px; }
 select { padding: 0; }
 
 /* align */
-.textLeft { text-align: left; }
+.textLeft { text-align: left !important; }
 
-.textCenter { text-align: center; }
+.textCenter { text-align: center !important; }
 
-.textRight { text-align: right; }
+.textRight { text-align: right !important; }
 
 .textMiddle::before { content: ''; display: inline-block; height: 100%; vertical-align: middle; }
 .textMiddle > * { vertical-align: middle; }
@@ -417,10 +417,14 @@ select { padding: 0; }
 .thumbList.type03 figure .imgBox img { max-width: 100%; }
 .thumbList.type03 figure figcaption { width: 80%; float: left; padding-right: 1%; }
 
-.ulStyle.type01 li { padding-left: 10px; text-indent: -10px; margin-bottom: 0.5em; }
+.ulStyle li { margin-bottom: 0.5em; }
+.ulStyle li ul { margin-left: 0.5em; margin-top: 0.5em; }
+.ulStyle li ul li { margin-bottom: 0.5em; }
+.ulStyle.type01 li { padding-left: 10px; text-indent: -10px; }
 .ulStyle.type01 li:before { content: "· "; }
-.ulStyle.type02 li { padding-left: 12px; margin-bottom: 0.5em; background: url(../images/common/dot_01.png) 0 6px no-repeat; }
-.ulStyle.type03 li { padding-left: 12px; margin-bottom: 0.5em; position: relative; }
+.ulStyle.type01 li ul li:before { content: "- "; }
+.ulStyle.type02 li { padding-left: 12px; background: url(../images/common/dot_01.png) 0 6px no-repeat; }
+.ulStyle.type03 li { padding-left: 12px; position: relative; }
 .ulStyle.type03 span { position: absolute; left: 0; }
 
 button i, button span { vertical-align: middle; }
@@ -470,18 +474,23 @@ button i + span { margin-left: 5px; }
 /*tableList*/
 .tableList { width: 100%; border-bottom: 1px solid #b8b8b8; }
 .tableList table { width: 100%; color: #707070; font-size: 12px; }
-.tableList table th, .tableList table td { padding: 7.5px 0; }
-.tableList table thead th { position: relative; font-weight: bold; }
-.tableList table tbody tr td { text-align: center; }
-.tableList table tbody tr td.title { text-align: left; padding-left: 5px; }
-.tableList table tbody tr td.title a { color: #424242; }
-.tableList.type01 table thead th { color: #fff; background: #2b3b4e; }
+.tableList table th, .tableList table td { padding: 7.5px 0; background: #fff; }
+.tableList table thead th { position: relative; font-weight: bold; vertical-align: middle; background: #f8f8f8; }
+.tableList table tbody td { text-align: center; }
+.tableList table tbody td.title { text-align: left; padding-left: 5px; }
+.tableList table tbody td.title a { color: #424242; }
+.tableList tfoot td { text-align: center; }
+.tableList.type01 table thead th { color: #fff; background: #2b3b4e; vertical-align: middle; }
 .tableList.type01 table thead th:before { content: ""; position: absolute; left: 0; width: 0; height: 50%; border-left: 1px solid #fff; }
 .tableList.type01 table thead th:first-child:before { content: none; }
-.tableList.type01 table tbody tr:nth-child(even) { background: #fafafa; }
+.tableList.type01 table tbody tr:nth-child(even) td { background: #fafafa; }
 .tableList.type01 table tbody tr td { border-top: 1px solid #d8d8d8; }
-.tableList.type02 table th, .tableList.type02 table td { border-right: 1px solid #b8b8b8; border-top: 1px solid #b8b8b8; padding: 7.5px 5px; background: #fff; }
+.tableList.type02 table th, .tableList.type02 table td { border-right: 1px solid #b8b8b8; border-top: 1px solid #b8b8b8; padding: 7.5px 5px; }
 .tableList.type02 table th:first-child, .tableList.type02 table td:first-child { border-left: 1px solid #b8b8b8; }
+.tableList.type02.tdLeft td { text-align: left; }
+.tableList.type02.tdLeft tfoot td { text-align: left; }
+.tableList.type02.tdRight td { text-align: right; }
+.tableList.type02.tdRight tfoot td { text-align: right; }
 
 .caution { font-size: 13px; margin-bottom: 10px; text-align: right; }
 .caution strong { font-weight: bold; }
@@ -531,5 +540,9 @@ button i + span { margin-left: 5px; }
 .paging ul li a { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; color: #666666; font-size: 13px; display: inline-block; width: 30px; height: 30px; line-height: 30px; border: 1px solid #dbdbdb; vertical-align: middle; background: #fff; }
 .paging ul li a i { overflow: hidden; }
 .paging ul li a i span { text-indent: -9999px; display: block; width: 0; height: 0; }
+
+.textBox div { display: inline-block; background: #fff; padding: 10px; width: 30%; margin-left: 1%; height: 200px; vertical-align: middle; line-height: 1.4; }
+.textBox div:first-child { margin-left: 0; }
+.textBox i { vertical-align: middle; margin-left: 1%; }
 
 /*# sourceMappingURL=guide.css.map */

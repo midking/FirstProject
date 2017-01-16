@@ -112,13 +112,13 @@ select{
 
 /* align */
 .textLeft{
-	text-align:left;
+	text-align:left !important;
 }
 .textCenter{
-	text-align:center;
+	text-align:center !important;
 }
 .textRight{
-	text-align:right;
+	text-align:right !important;
 }
 .textMiddle{
 	&::before{

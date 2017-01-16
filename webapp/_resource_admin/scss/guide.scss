@@ -113,27 +113,37 @@
 }
 
 .ulStyle{
+	li{
+		margin-bottom:0.5em;
+		ul{
+			margin-left:0.5em;
+			margin-top:0.5em;
+			li{
+				margin-bottom:0.5em;
+			}
+		}
+	}
 	&.type01{
 		li{
 			padding-left:10px;
 			text-indent:-10px;
-			margin-bottom:0.5em;
 			&:before{
 				content:"· ";
+			}
+			ul li:before{
+				content:"- ";
 			}
 		}
 	}
 	&.type02{
 		li{
 			padding-left:12px;
-			margin-bottom:0.5em;
 			background:url(../images/common/dot_01.png) 0 6px no-repeat;
 		}
 	}
 	&.type03{
 		li{
 			padding-left:12px;
-			margin-bottom:0.5em;
 			position:relative;
 		}
 		span{
@@ -346,26 +356,32 @@ button{
 		font-size:12px;
 		th,td{
 			padding:7.5px 0;
+			background:#fff;
 		}
 		thead{
 			th{
 				position:relative;
 				font-weight:bold;
+				vertical-align:middle;
+				background:#f8f8f8;
 			}
 		}
 		tbody{
-			tr{
-				td{	
-					text-align:center;
-					&.title{
-						text-align:left;
-						padding-left:5px;
-						a{
-							color:#424242;
-						}
+			td{	
+				text-align:center;
+				&.title{
+					text-align:left;
+					padding-left:5px;
+					a{
+						color:#424242;
 					}
 				}
 			}
+		}
+	}
+	tfoot{
+		td{
+			text-align:center;
 		}
 	}
 	&.type01{
@@ -374,6 +390,7 @@ button{
 				th{
 					color:#fff;
 					background:$baseBgColor;
+					vertical-align:middle;
 					&:before{
 						content:"";
 						position:absolute;
@@ -389,7 +406,7 @@ button{
 			}
 			tbody{
 				tr{
-					&:nth-child(even){
+					&:nth-child(even) td{
 						background:#fafafa;
 					}
 					td{	
@@ -405,12 +422,27 @@ button{
 				border-right:1px solid #b8b8b8;
 				border-top:1px solid #b8b8b8;
 				padding:7.5px 5px;
-				background:#fff;
 				&:first-child{
 					border-left:1px solid #b8b8b8;
 				}
 			}
 		}
+		&.tdLeft{
+			td{
+				text-align:left;
+			}
+			tfoot td{
+				text-align:left;	
+			}	
+		} 
+		&.tdRight{
+			td{
+				text-align:right;
+			}
+			tfoot td{
+				text-align:right;	
+			}	
+		} 
 	}
 }
 .caution{
@@ -628,5 +660,24 @@ button{
 				}
 			}
 		}
+	}
+}
+.textBox{
+	div{
+		display:inline-block;
+		background:#fff;
+		padding:10px;
+		width:30%;
+		margin-left:1%;
+		height:200px;
+		vertical-align:middle;
+		line-height:1.4;
+		&:first-child{
+			margin-left:0;
+		}
+	}
+	i{
+		vertical-align:middle;
+		margin-left:1%;
 	}
 }

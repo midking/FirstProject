@@ -37,11 +37,11 @@ select, input { height: 22px; }
 select { padding: 0; }
 
 /* align */
-.textLeft { text-align: left; }
+.textLeft { text-align: left !important; }
 
-.textCenter { text-align: center; }
+.textCenter { text-align: center !important; }
 
-.textRight { text-align: right; }
+.textRight { text-align: right !important; }
 
 .textMiddle::before { content: ''; display: inline-block; height: 100%; vertical-align: middle; }
 .textMiddle > * { vertical-align: middle; }

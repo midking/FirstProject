@@ -105,7 +105,7 @@
 			<div class="ulStyle type01">
 				<ul>
 					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-					<li>Fugiat totam dolorum ipsum repudiandae, maxime, commodi voluptates provident iure</li>
+					<li>Fugiat totam dolorum ipsum repudiandae, maxime</li>
 					<li>Velit praesentium vel commodi laboriosam explicabo omnis illo</li>
 					<li>Est exercitationem incidunt quisquam omnis, ad reiciendis dolor.</li>
 					<li>Molestias aliquid qui, laborum deleniti animi quas reiciendis</li>
@@ -148,6 +148,23 @@
 						<span>·</span>
 						<p>Voluptatibus ex eligendi ab ipsam similique dolores</p>
 					</li>
+				</ul>
+			</div>
+		</div>
+		<h2 class="guide_h2">ulStyle>ul</h2>
+		<div class="guideArea">
+			<div class="ulStyle type01">
+				<ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+					<li>Fugiat totam dolorum ipsum repudiandae, maxime
+						<ul>
+							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+							<li>Molestias aliquid qui, laborum deleniti </li>
+						</ul>
+					</li>
+					<li>Velit praesentium vel commodi laboriosam explicabo</li>
+					<li>Est exercitationem incidunt quisquam omnis, ad reiciendis dolor.</li>
+					<li>Molestias aliquid qui, laborum deleniti </li>
 				</ul>
 			</div>
 		</div>
@@ -286,7 +303,7 @@
 				</table>
 			</div>
 		</div>
-		<h2 class="guide_h2">Table type02</h2>
+		<h2 class="guide_h2">Table type02-1(td center)</h2>
 		<div class="guideArea">
 			<div class="tableList type02">
 				<table>
@@ -300,25 +317,139 @@
 					</colgroup>
 					<thead>
 						<tr>
-							<th scope="col">번호</th>
 							<th scope="col">제목</th>
-							<th scope="col">출처</th>
-							<th scope="col">등록자</th>
-							<th scope="col">등록일</th>
+							<th scope="col">제목</th>
+							<th scope="col">제목</th>
+							<th scope="col">제목</th>
+							<th scope="col">제목</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>1</td>
-							<td>데이터</td>
-							<td>데이터</td>
-							<td>데이터</td>
-							<td>데이터</td>
-						</tr>
-						<tr>
-							<td colspan="5">내용이 없습니다.</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
 						</tr>
 					</tbody>
+					<tfoot>
+						<tr>
+							<th>표의 합계</th>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		<h2 class="guide_h2">Table type02-2(td Left)</h2>
+		<div class="guideArea">
+			<div class="tableList type02 tdLeft">
+				<table>
+					<caption>테이블 설명</caption>
+					<colgroup>
+						<col width="20%">
+						<col width="20%">
+						<col width="20%">
+						<col width="20%">
+						<col width="20%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">제목</th>
+							<th scope="colgroup" colspan="2">제목</th>
+							<th scope="colgroup" colspan="2">제목</th>
+						</tr>
+						<tr>
+							<th scope="col">제목</th>
+							<th scope="col">제목</th>
+							<th scope="col">제목</th>
+							<th scope="col">제목</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th rowspan="2">제목</th>
+							<td>내용</td>
+							<td>내용</td>
+							<td>
+								<ul class="ulStyle type02">
+									<li>내용</li>
+									<li>내용</li>
+								</ul>
+							</td>
+							<td>내용</td>
+						</tr>
+						<tr>
+							<td>내용</td>
+							<td>내용</td>
+							<td>내용</td>
+							<td>내용</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th>표의 합계</th>
+							<td colspan="4">2</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		<h2 class="guide_h2">Table type02-3(td Right)</h2>
+		<div class="guideArea">
+			<div class="tableList type02 tdRight">
+				<table>
+					<caption>테이블 설명</caption>
+					<colgroup>
+						<col width="20%">
+						<col width="20%">
+						<col width="20%">
+						<col width="20%">
+						<col width="20%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">제목</th>
+							<th scope="colgroup" colspan="2">제목</th>
+							<th scope="colgroup" colspan="2">제목</th>
+						</tr>
+						<tr>
+							<th scope="col">제목</th>
+							<th scope="col">제목</th>
+							<th scope="col">제목</th>
+							<th scope="col">제목</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th rowspan="2">제목</th>
+							<td>내용</td>
+							<td>내용</td>
+							<td class="textLeft">
+								<ul class="ulStyle type02">
+									<li>내용</li>
+									<li>내용</li>
+								</ul>
+							</td>
+							<td>내용</td>
+						</tr>
+						<tr>
+							<td>내용</td>
+							<td>내용</td>
+							<td>내용</td>
+							<td>내용</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th>표의 합계</th>
+							<td colspan="4">2</td>
+						</tr>
+					</tfoot>
 				</table>
 			</div>
 		</div>
@@ -418,6 +549,30 @@
 					<li class="nextPage"><a href="#none"><i class="fa fa-angle-right" aria-hidden="true"><span>다음 페이지</span></i></a></li>
 					<li class="lastPage"><a href="#none"><i class="fa fa-angle-double-right" aria-hidden="true"><span>마지막 페이지</span></i></a></li>
 				</ul>
+			</div>	
+		</div>
+		<h2 class="guide_h2">textBox</h2>
+		<div class="guideArea">
+			<div class="textBox">
+				<div>
+					<ul>
+						<li>list1</li>
+						<li>list2</li>
+						<li>list3</li>
+					</ul>
+				</div>
+				<i class="fa fa-angle-right" aria-hidden="true"></i>
+				<div>
+					<ul>
+						<li>list1</li>
+						<li>list2</li>
+						<li>list3</li>
+					</ul>
+				</div>
+				<i class="fa fa-angle-right" aria-hidden="true"></i>
+				<div>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quidem nesciunt tenetur! Magni laudantium officiis delectus molestias distinctio illo, eaque eum nobis, quae fuga veniam itaque ipsum quibusdam beatae asperiores.
+				</div>
 			</div>	
 		</div>
 		<h2 class="guide_h2">List TYPE1</h2>
