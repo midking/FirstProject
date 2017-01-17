@@ -6,7 +6,7 @@
 html, body { font-family: 'Noto Sans KR', sans-serif; height: 100%; }
 
 /* IR */
-legend, .hidden { position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
+legend, .hidden, .button.icon i > span { position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
 
 caption { position: relative; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
 
@@ -546,5 +546,14 @@ button i + span { margin-left: 5px; }
 .textBox div { display: inline-block; background: #fff; padding: 10px; width: 30%; margin-left: 1%; height: 200px; vertical-align: middle; line-height: 1.4; }
 .textBox div:first-child { margin-left: 0; }
 .textBox i { vertical-align: middle; margin-left: 1%; }
+
+#popup { position: fixed; display: none; top: 0; left: 0; bottom: 0; right: 0; text-align: center; }
+#popup.on { display: block; }
+#popup .dimmed { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #000; opacity: 0.7; }
+#popup .popupContainer { display: inline-block; background: #fff; width: 450px; margin-top: 17%; position: relative; }
+#popup .popupContainer .popHeader { height: 35px; background: #2b3b4e; font-weight: bold; color: #fff; line-height: 35px; font-size: 16px; text-align: left; padding-left: 14px; }
+#popup .popupContainer .popContents { padding: 15px; text-align: left; font-size: 14px; line-height: 1.5; }
+#popup .popupContainer .popExit { position: absolute; right: 0; top: 0; color: #fff; padding: 0 0.5em; }
+#popup .popupContainer .popExit i { line-height: 35px; }
 
 /*# sourceMappingURL=guide.css.map */
