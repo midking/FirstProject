@@ -5,13 +5,9 @@ $baseBgColor : #2b3b4e;
 $baseColor : #e15525;
 $formBaseHeight : 22px;
 
-
-/* font */
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-
 *{
 	box-sizing:border-box;
-	// line-height:1.4;
+	line-height:1.4;
 }
 
 html,
@@ -22,6 +18,10 @@ body{
 
 h1, h2, h3, h4, h5, h6{
 	font-weight:bold !important;
+}
+/* sprite img */
+.icon{
+	display:inline-block;
 }
 
 /* IR */

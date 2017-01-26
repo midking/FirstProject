@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- 기본 meta -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- //기본 meta -->
+
+	<!-- 선행 script -->
+	<script src=""></script> <!-- 퍼블 -->
+	<script src=""></script> <!-- 개발 -->
+	<!-- //선행 script -->
+
+	<!-- stylesheet : @import 시키지 않는게 성능상 좋습니다. -->
+	<link rel="stylesheet" href="../../_resource_admin/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../_resource_admin/css/style.css">
+	<!-- //stylesheet -->
+	<title>login</title>
+</head>
+<body>
+	<div id="wrap" class="login">
+		<div class="loginWrap">
+			<form action="post" class="login_form">
+				<fieldset>
+					<legend>로그인</legend>
+					<h1>Login ADMIN</h1>
+					<div class="login">
+						<div class="login_row"><input type="text" placeholder="Username"></div>
+						<div class="login_row"><input type="password" placeholder="Password"></div>
+						<button type="button" id="btnLogin"></button>
+					</div>
+					<div class="loginCheck">
+						<input type="checkbox" name="" id="check"><label for="check">로그인 기억하기</label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+<!-- guide link -->
+<div class="guideLinkGroup">
+	<ul>
+		<li><strong>GUIDE LINK</strong></li>
+		<li><a href="../guide/guide_A_layout.html">Layout</a></li>
+		<li><a href="../guide/guide_B_code.html">Code Guide</a></li>
+		<li><a href="../guide/guide_B_user.html">User Guide</a></li>
+		<li><a href="../guide/guide_C_list.html">List</a></li>
+		<li><a href="../guide/guide_C_view.html">View</a></li>
+		<li><a href="../guide/guide_C_write.html">Write</a></li>
+		<li><a href="../guide/guide_D_error.html">Error</a></li>
+		<li><a href="../guide/guide_D_login.html">Login</a></li>
+		<li><a href="../guide/guide_D_popup.html">Popup</a></li>
+	</ul>
+</div>
+<!-- //guide link -->
+<!-- script -->
+	<script src="../../_resource_admin/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="../../_resource_admin/js/common.js"></script>
+<!-- //script -->
+
+<!--[if lte IE 8]>
+	<script src="../../_resource_admin/js/vendor/jquery-1.12.4.min.js"></script>
+<![endif]-->
+</body>
+</html>

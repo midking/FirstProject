@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "global.scss";
 
 #wrap{
 	width:100%;
@@ -669,5 +668,32 @@
 			margin-bottom:2px
 		}
 	}
-
+}
+.guideLinkGroup{
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:220px;
+	margin-bottom:20px;
+	background-color:$baseBgColor;
+	li{
+		color:#111923;
+		line-height:1.6;
+		text-align:center;
+		strong{
+			font-weight:bold;
+		}
+		a{
+			color:#fff;
+		}
+	}
+	li:nth-child(odd){
+		background-color:#445d7a;
+	}
+	a{
+		display:block;
+		&:hover{
+			font-weight:bold;
+		}
+	}
 }

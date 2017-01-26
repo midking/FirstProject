@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "global.scss";
 .guide{
 	width:980px;
 	margin: 15px auto;
@@ -11,7 +10,15 @@
 		font-size:1.6em;
 		margin:20px 0 5px;
 	}
-
+	.guide_h3{
+		// line-height:1.4;
+		margin:10px 0 5px;	
+	}
+	.guideSummary{
+		 p{
+			line-height:1.4;
+		}
+	}
 	.guideArea{
 		background-color: #f2f2f2;
 		padding: 5px 20px;
@@ -474,7 +481,9 @@ button{
 	width:100%;
 	font-size:12px;
 	border-top:2px solid #6a6a6a;
-	
+	table{
+		width:100%;
+	}
 	th,td{
 		padding:5px;
 		color:#424242;
@@ -543,7 +552,6 @@ button{
 			background:#f8f8f8;
 			word-break:break-all;
 		}
-		
 	}
 	dd{
 		padding:10px 16px;
@@ -575,6 +583,9 @@ button{
 					}
 				}
 			}
+		}
+		&+dd{
+			min-height:200px;
 		}
 	}
 	.pageLink{
