@@ -150,18 +150,6 @@
 				</ul>
 			</div>
 		</div>
-		<h2 class="guide_h2">Buttons-text default</h2>
-		<div class="guideArea">
-			<button type="button"><span>Search</span></button>
-			<button type="button"><span>삭제</span></button>
-			<button type="button"><span>새로고침</span></button>
-			<button type="button"><span>액셀</span></button>
-			<button type="button"><span>워드</span></button>
-			<button type="button"><span>PDF</span></button>
-			<button type="button"><span>파워포인트</span></button>
-			<button type="button"><span>닫기</span></button>
-			<button type="button"><span>캘린더</span></button>
-		</div>
 		<h2 class="guide_h2">Buttons-text TYPE01</h2>
 		<div class="guideArea">
 			<a href="#none" class="button black">Rectangle</a>  or
@@ -213,6 +201,18 @@
 			<button type="button" class="button icon"><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i></button>
 			<button type="button" class="button icon"><i class="fa fa-times" aria-hidden="true"></i></button>
 			<button type="button" class="button icon"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+		</div>
+		<h2 class="guide_h2">Buttons-text default</h2>
+		<div class="guideArea">
+			<button type="button"><span>Search</span></button>
+			<button type="button"><span>삭제</span></button>
+			<button type="button"><span>새로고침</span></button>
+			<button type="button"><span>액셀</span></button>
+			<button type="button"><span>워드</span></button>
+			<button type="button"><span>PDF</span></button>
+			<button type="button"><span>파워포인트</span></button>
+			<button type="button"><span>닫기</span></button>
+			<button type="button"><span>캘린더</span></button>
 		</div>
 		<h2 class="guide_h2">Buttons- icon+text </h2>
 		<div class="guideArea">
@@ -638,6 +638,10 @@
 				$(this).append('<div class="codeXmp"><xmp></xmp></div>');
 				$(this).find('xmp').html(_temp);
 				$(this).toggleClass('temp');
+			});
+			$('.guide_h2').append(" <button type='button' class='fa fa-code'></button>");
+			$('.guide_h2 .fa-code').on('click', function(){
+				$(this).parent().next().find('.codeXmp').slideToggle();
 			});
 		});
 	</script>
