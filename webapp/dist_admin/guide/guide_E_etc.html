@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- 기본 meta -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- //기본 meta -->
+
+	<!-- 선행 script -->
+	<script src=""></script> <!-- 퍼블 -->
+	<script src=""></script> <!-- 개발 -->
+	<!-- //선행 script -->
+
+	<!-- stylesheet : @import 시키지 않는게 성능상 좋습니다. -->
+	<link rel="stylesheet" href="../../_resource_admin/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../_resource_admin/css/style.css">
+	<!-- //stylesheet -->
+	<title>layout</title>
+</head>
+<body>
+	<div id="wrap">
+				<!-- header -->
+		<div id="header">
+			<div class="logo">
+				<h1><a href="javascript:void(0);">LOGO</a></h1>
+			</div>
+			<div class="top">
+				<h2>ADMIN</h2>
+				<div id="nav">
+					<ul>
+						<li class="on"><a href="javascript:void(0);">menu1</a></li>
+						<li><a href="javascript:void(0);">menu2</a></li>
+						<li><a href="javascript:void(0);">menu3</a></li>
+						<li><a href="javascript:void(0);">menu4</a></li>
+						<li><a href="javascript:void(0);">menu5</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //header -->
+		<div class="container">
+						<!-- side -->
+			<div class="side">
+				<div class="administrator">
+					<strong>환영합니다! 관리자님</strong>
+					<span>당신은 슈퍼관리자입니다.</span>
+				</div>
+				<div class="textCenter">
+					<button type="button" class="button white medium">로그아웃</button>
+				</div>
+				<!-- lnb -->
+				<ul class="lnb">
+					<li>
+						<a href="javascript:void(0);">subMenu1</a>
+						<ul>
+							<li><a href="javascript:void(0);">subMenu</a></li>
+							<li><a href="javascript:void(0);">subMenu</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">subMenu2</a></li>
+					<li class="on"><a href="javascript:void(0);">subMenu3</a></li>
+				</ul>
+				<!-- //lnb -->
+			</div>
+			<!-- //side -->
+			<!-- content -->
+			<div class="content">
+
+				<!-- 1 -->
+				<div class="tableList type02 tdCenter">
+					<table>
+						<caption>테이블 설명</caption>
+						<colgroup>
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="3">연번</th>
+								<th scope="col" rowspan="3">학교</th>
+								<th scope="col" rowspan="3">학과</th>
+								<th scope="col" rowspan="3">입학정원(A)</th>
+								<th scope="col" colspan="3">모집인원</th>
+								<th scope="col" colspan="3">지원자</th>
+								<th scope="col" colspan="5">입학자</th>
+								<th scope="col" rowspan="3">정원내 신입생<br>충원율(%)</th>
+								<th scope="col" rowspan="3">모집율</th>
+								<th scope="col" rowspan="3">경쟁률(C/B)</th>
+							</tr>
+							<tr>
+								<th scope="col" rowspan="2">계</th>
+								<th scope="col" rowspan="2">정원내(B)</th>
+								<th scope="col" rowspan="2">정원외</th>
+								<th scope="col" rowspan="2">계</th>
+								<th scope="col" rowspan="2">정원내(C)</th>
+								<th scope="col" rowspan="2">정원외</th>
+								<th scope="col" rowspan="2">계</th>
+								<th scope="col" colspan="2">정원내(D)</th>
+								<th scope="col" colspan="2">정원외</th>
+							</tr>
+							<tr>
+								<th scope="col">남</th>
+								<th scope="col">여</th>
+								<th scope="col">남</th>
+								<th scope="col">여</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //1 -->
+
+				<div class="mb40"></div>
+				
+				<!-- 2 -->
+				<div class="tableList type02 tdCenter">
+					<table>
+						<caption>테이블 설명</caption>
+						<colgroup>
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">연번</th>
+								<th scope="col" rowspan="2">학교</th>
+								<th scope="col" rowspan="2">학과</th>
+								<th scope="col" rowspan="2">정원구분</th>
+								<th scope="col" rowspan="2">전형명</th>
+								<th scope="col" colspan="3">최종</th>
+							</tr>
+							<tr>
+								<th scope="col">모집인원(A)</th>
+								<th scope="col">등록인(B)</th>
+								<th scope="col">등록률(%)<br>(A/B)*100</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="2">1</td>
+								<td rowspan="2">대구대학교</td>
+								<td rowspan="2"></td>
+								<td>정원내</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>정원외</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>동국대학교</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //2 -->
+
+				<div class="mb40"></div>
+				
+				<!-- 3 -->
+				<div class="tableList type02 tdCenter">
+					<table>
+						<caption>테이블 설명</caption>
+						<colgroup>
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">연번</th>
+								<th scope="col" rowspan="2">학교</th>
+								<th scope="col" rowspan="2">학생정원(A)</th>
+								<th scope="col" rowspan="2">학생모집정지인원</th>
+								<th scope="col" colspan="3">재학생</th>
+								<th scope="col" rowspan="2">재학생충원율(%)</th>
+								<th scope="col" rowspan="2">정원내 재학생 충원율(%)</th>
+							</tr>
+							<tr>
+								<th scope="col">계(C)</th>
+								<th scope="col">정원내(D)</th>
+								<th scope="col">정원외</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>대구대학교</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //3 -->
+
+				<div class="mb40"></div>
+				
+				<!-- 4 -->
+				<div class="tableList type02 tdCenter">
+					<table>
+						<caption>테이블 설명</caption>
+						<colgroup>
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">연변</th>
+								<th scope="col" rowspan="2">학교</th>
+								<th scope="col" rowspan="2">재적학생수(A)</th>
+								<th scope="col" colspan="9">사유별 중도탈락 학생</th>
+								<th scope="col" rowspan="2">중도탈락학생비율(%)</th>
+							</tr>
+							<tr>
+								<th scope="col">소계(B)</th>
+								<th scope="col">미등록</th>
+								<th scope="col">미복학</th>
+								<th scope="col">자퇴</th>
+								<th scope="col">학사경고</th>
+								<th scope="col">학생활동</th>
+								<th scope="col">유급제적</th>
+								<th scope="col">수업연한초과</th>
+								<th scope="col">기타</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>대구대학교</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //4 -->
+
+				<div class="mb40"></div>
+				
+				<!-- 5 -->
+				<div class="tableList type02 tdCenter">
+					<table>
+						<caption>테이블 설명</caption>
+						<colgroup>
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+							<col width="" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="3">연번</th>
+								<th scope="col" rowspan="3">학교</th>
+								<th scope="col" colspan="2">1월</th>
+								<th scope="col" colspan="2">2월</th>
+								<th scope="col" colspan="2">3월</th>
+								<th scope="col" colspan="2">4월</th>
+								<th scope="col" colspan="2">5월</th>
+								<th scope="col" colspan="2">6월</th>
+							</tr>
+							<tr>
+								<th scope="col">집행액</th>
+								<th scope="col">누적집행액</th>
+								<th scope="col">집행액</th>
+								<th scope="col">누적집행액</th>
+								<th scope="col">집행액</th>
+								<th scope="col">누적집행액</th>
+								<th scope="col">집행액</th>
+								<th scope="col">누적집행액</th>
+								<th scope="col">집행액</th>
+								<th scope="col">누적집행액</th>
+								<th scope="col">집행액</th>
+								<th scope="col">누적집행액</th>
+							</tr>
+							<tr>
+								<th scope="col">집행률</th>
+								<th scope="col">누적집행률</th>
+								<th scope="col">집행률</th>
+								<th scope="col">누적집행률</th>
+								<th scope="col">집행률</th>
+								<th scope="col">누적집행률</th>
+								<th scope="col">집행률</th>
+								<th scope="col">누적집행률</th>
+								<th scope="col">집행률</th>
+								<th scope="col">누적집행률</th>
+								<th scope="col">집행률</th>
+								<th scope="col">누적집행액</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>대구대학교</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //5 -->
+
+
+			</div>
+			<!-- //content -->
+		</div>
+	</div>
+<!-- guide link -->
+<div class="guideLinkGroup">
+	<ul>
+		<li><strong>GUIDE LINK</strong></li>
+		<li><a href="../guide/guide_A_layout.html">Layout</a></li>
+		<li><a href="../guide/guide_B_code.html">Code Guide</a></li>
+		<li><a href="../guide/guide_B_form.html">Form Guide</a></li>
+		<li><a href="../guide/guide_B_user.html">User Guide</a></li>
+		<li><a href="../guide/guide_C_list.html">List</a></li>
+		<li><a href="../guide/guide_C_view.html">View</a></li>
+		<li><a href="../guide/guide_C_write.html">Write</a></li>
+		<li><a href="../guide/guide_D_error.html">Error</a></li>
+		<li><a href="../guide/guide_D_login.html">Login</a></li>
+		<li><a href="../guide/guide_D_popup.html">Popup</a></li>
+	</ul>
+</div>
+<!-- //guide link -->
+<!-- script -->
+	<script src="../../_resource_admin/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="../../_resource_admin/js/common.js"></script>
+<!-- //script -->
+
+<!--[if lte IE 8]>
+	<script src="../../_resource_admin/js/vendor/jquery-1.12.4.min.js"></script>
+<![endif]-->
+</body>
+</html>
