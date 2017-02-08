@@ -1,0 +1,47 @@
+<!--#include file="../include/_dtd.html" -->
+	<title>form guide</title>
+</head>
+<body>
+<!-- 본문 -->
+	<!-- guide -->
+	<div class="guide">
+		<h1 class="guide_h1">Form</h1>
+		<!-- guideIndex -->
+		<div class="guideIndex"></div>
+		<!-- //guideIndex -->
+		<h2 class="guide_h2">thumbList TYPE1</h2>
+		<div class="guideArea">
+			<div class="thumbList type01">
+				<ul>
+					<li>
+						<figure>
+							<div class="imgBox">
+								<img src="https://dummyimage.com/200x200" alt="">
+							</div>
+							<figcaption>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto mollitia dignissimos, corporis nam natus vel tenetur quas sint! Debitis autem quos iste consectetur expedita animi. Corporis neque et eveniet deserunt.</p>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //guide -->
+<!--#include file="../include/_scripts.html" -->
+	<script>
+		$(document).ready(function(){
+			$('.guideArea').each(function(index){
+				var _temp=$(this).html();
+				$(this).append('<div class="codeXmp"><xmp></xmp></div>');
+				$(this).find('xmp').html(_temp);
+				$(this).toggleClass('temp');
+			});
+			$('.guide_h2').append(" <button type='button' class='fa fa-code'></button>");
+			$('.guide_h2 .fa-code').on('click', function(){
+				$(this).parent().next().find('.codeXmp').slideToggle();
+			});
+		});
+	</script>
+</body>
+</html>

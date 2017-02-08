@@ -16,61 +16,35 @@
 	<link rel="stylesheet" href="../../_resource_admin/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../../_resource_admin/css/style.css">
 	<!-- //stylesheet -->
-	<title>layout</title>
+	<title>form guide</title>
 </head>
 <body>
-	<div id="wrap">
-				<!-- header -->
-		<div id="header">
-			<div class="logo">
-				<h1><a href="javascript:void(0);">LOGO</a></h1>
-			</div>
-			<div class="top">
-				<h2>ADMIN</h2>
-				<div id="nav">
-					<ul>
-						<li class="on"><a href="javascript:void(0);">menu1</a></li>
-						<li><a href="javascript:void(0);">menu2</a></li>
-						<li><a href="javascript:void(0);">menu3</a></li>
-						<li><a href="javascript:void(0);">menu4</a></li>
-						<li><a href="javascript:void(0);">menu5</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- //header -->
-		<div class="container">
-						<!-- side -->
-			<div class="side">
-				<div class="administrator">
-					<strong>환영합니다! 관리자님</strong>
-					<span>당신은 슈퍼관리자입니다.</span>
-				</div>
-				<div class="textCenter">
-					<button type="button" class="button white medium">로그아웃</button>
-				</div>
-				<!-- lnb -->
-				<ul class="lnb">
+<!-- 본문 -->
+	<!-- guide -->
+	<div class="guide">
+		<h1 class="guide_h1">Form</h1>
+		<!-- guideIndex -->
+		<div class="guideIndex"></div>
+		<!-- //guideIndex -->
+		<h2 class="guide_h2">thumbList TYPE1</h2>
+		<div class="guideArea">
+			<div class="thumbList type01">
+				<ul>
 					<li>
-						<a href="javascript:void(0);">subMenu1</a>
-						<ul>
-							<li><a href="javascript:void(0);">subMenu</a></li>
-							<li><a href="javascript:void(0);">subMenu</a></li>
-						</ul>
+						<figure>
+							<div class="imgBox">
+								<img src="https://dummyimage.com/200x200" alt="">
+							</div>
+							<figcaption>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto mollitia dignissimos, corporis nam natus vel tenetur quas sint! Debitis autem quos iste consectetur expedita animi. Corporis neque et eveniet deserunt.</p>
+							</figcaption>
+						</figure>
 					</li>
-					<li><a href="javascript:void(0);">subMenu2</a></li>
-					<li class="on"><a href="javascript:void(0);">subMenu3</a></li>
 				</ul>
-				<!-- //lnb -->
 			</div>
-			<!-- //side -->
-			<!-- content -->
-			<div class="content">
-				
-			</div>
-			<!-- //content -->
 		</div>
 	</div>
+	<!-- //guide -->
 <!-- guide link -->
 <div class="guideLinkGroup">
 	<ul>
@@ -96,5 +70,19 @@
 <!--[if lte IE 8]>
 	<script src="../../_resource_admin/js/vendor/jquery-1.12.4.min.js"></script>
 <![endif]-->
+	<script>
+		$(document).ready(function(){
+			$('.guideArea').each(function(index){
+				var _temp=$(this).html();
+				$(this).append('<div class="codeXmp"><xmp></xmp></div>');
+				$(this).find('xmp').html(_temp);
+				$(this).toggleClass('temp');
+			});
+			$('.guide_h2').append(" <button type='button' class='fa fa-code'></button>");
+			$('.guide_h2 .fa-code').on('click', function(){
+				$(this).parent().next().find('.codeXmp').slideToggle();
+			});
+		});
+	</script>
 </body>
 </html>
